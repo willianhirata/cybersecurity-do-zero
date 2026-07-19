@@ -1,0 +1,2067 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Aprenda Cybersecurity do Zero entendendo os fundamentos antes das ferramentas.">
+      
+      
+        <meta name="author" content="Willian Hirata">
+      
+      
+        <link rel="canonical" href="https://willianhirata.github.io/cybersecurity-do-zero/fundamentos/001-o-que-e-cybersecurity/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../../redes/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>O que é Cybersecurity? - Cybersecurity do Zero</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#capitulo-001-o-que-e-cybersecurity" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Cybersecurity do Zero" class="md-header__button md-logo" aria-label="Cybersecurity do Zero" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cybersecurity do Zero
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              O que é Cybersecurity?
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="cyan"  aria-label="Alternar para modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Alternar para modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="cyan"  aria-label="Alternar para modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Alternar para modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Início
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Fundamentos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../redes/" class="md-tabs__link">
+          
+  
+  
+  Redes
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../linux/" class="md-tabs__link">
+          
+  
+  
+  Linux
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../windows/" class="md-tabs__link">
+          
+  
+  
+  Windows
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../blue-team/" class="md-tabs__link">
+          
+  
+  
+  Blue Team
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../osint/" class="md-tabs__link">
+          
+  
+  
+  OSINT
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../threat-intelligence/" class="md-tabs__link">
+          
+  
+  
+  Threat Intelligence
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Cybersecurity do Zero" class="md-nav__button md-logo" aria-label="Cybersecurity do Zero" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Cybersecurity do Zero
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundamentos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fundamentos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    O que é Cybersecurity?
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    O que é Cybersecurity?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#o-que-voce-aprendera-neste-capitulo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        O que você aprenderá neste capítulo?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#antes-de-comecar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Antes de começar...
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Redes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Redes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../redes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Linux
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Windows
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Windows
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../windows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blue Team
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Blue Team
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blue-team/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OSINT
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    OSINT
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../osint/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Threat Intelligence
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Threat Intelligence
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../threat-intelligence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#o-que-voce-aprendera-neste-capitulo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        O que você aprenderá neste capítulo?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#antes-de-comecar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Antes de começar...
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="capitulo-001-o-que-e-cybersecurity">Capítulo 001 — O que é Cybersecurity?<a class="headerlink" href="#capitulo-001-o-que-e-cybersecurity" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p><strong>Entender antes de decorar.</strong></p>
+</blockquote>
+<p><strong>Nível:</strong> Iniciante
+<strong>Tempo estimado de leitura:</strong> 15 minutos
+<strong>Pré-requisitos:</strong> Nenhum</p>
+<hr />
+<h2 id="o-que-voce-aprendera-neste-capitulo">O que você aprenderá neste capítulo?<a class="headerlink" href="#o-que-voce-aprendera-neste-capitulo" title="Permanent link">&para;</a></h2>
+<p>Ao final deste capítulo, você será capaz de:</p>
+<ul>
+<li>compreender o que significa Cybersecurity;</li>
+<li>entender por que a segurança cibernética se tornou necessária;</li>
+<li>identificar o que precisa ser protegido;</li>
+<li>diferenciar ameaça, vulnerabilidade, risco e ataque;</li>
+<li>conhecer as principais etapas de uma estratégia de segurança;</li>
+<li>reconhecer exemplos de Cybersecurity no cotidiano;</li>
+<li>conhecer algumas das áreas profissionais existentes;</li>
+<li>entender como Cyber Threat Intelligence se relaciona com a segurança.</li>
+</ul>
+<hr />
+<h2 id="antes-de-comecar">Antes de começar...<a class="headerlink" href="#antes-de-comecar" title="Permanent link">&para;</a></h2>
+<p>Você já parou para pensar em quantas vezes utilizou a tecnologia somente hoje?</p>
+<p>Talvez você tenha desligado o alarme do celular, acessado sua conta bancária, respondido a uma mensagem, aberto seu e-mail, realizado uma compra ou consultado o mapa para encontrar algum endereço.</p>
+<p>Para nós, essas atividades parecem simples.</p>
+<p>Basta tocar na tela, digitar uma senha e esperar alguns segundos.</p>
+<p>Por trás dessa aparente simplicidade, porém, existem sistemas, servidores, redes, bancos de dados, aplicações e diversos outros recursos trabalhando para que tudo funcione corretamente.</p>
+<p>Esses ambientes armazenam informações muito valiosas:</p>
+<ul>
+<li>senhas;</li>
+<li>documentos;</li>
+<li>conversas;</li>
+<li>dados bancários;</li>
+<li>prontuários médicos;</li>
+<li>informações empresariais;</li>
+<li>endereços;</li>
+<li>fotografias;</li>
+<li>dados de clientes;</li>
+<li>segredos comerciais.</li>
+</ul>
+<p>Agora imagine que nenhuma dessas informações tivesse proteção.</p>
+<p>Qualquer pessoa poderia acessar sua conta bancária.</p>
+<p>Um funcionário sem autorização poderia visualizar o salário dos colegas.</p>
+<p>Um criminoso poderia modificar os dados de uma transferência.</p>
+<p>Um hospital poderia perder o acesso aos prontuários de seus pacientes.</p>
+<p>Uma loja virtual poderia ficar indisponível durante uma importante campanha de vendas.</p>
+<p>Foi para reduzir riscos como esses que a Cybersecurity se tornou necessária.</p>
+<p>Antes de aprender ferramentas, comandos ou técnicas, precisamos compreender o problema que estamos tentando resolver.</p>
+<hr />
+<h1 id="o-problema-que-a-cybersecurity-procura-resolver">O problema que a Cybersecurity procura resolver<a class="headerlink" href="#o-problema-que-a-cybersecurity-procura-resolver" title="Permanent link">&para;</a></h1>
+<p>Vivemos em uma sociedade cada vez mais dependente de sistemas digitais.</p>
+<p>Empresas utilizam computadores para administrar estoques, emitir notas fiscais, registrar vendas, armazenar contratos e se comunicar com clientes.</p>
+<p>Hospitais dependem de sistemas para acessar exames, registrar medicamentos e acompanhar pacientes.</p>
+<p>Bancos utilizam redes e aplicações para movimentar dinheiro.</p>
+<p>Governos armazenam informações sobre milhões de cidadãos.</p>
+<p>Até mesmo pequenos negócios dependem de e-mail, redes sociais, marketplaces, sistemas de pagamento e serviços na nuvem.</p>
+<p>Essa dependência cria uma situação importante:</p>
+<blockquote>
+<p>Quanto maior o valor e a importância de um recurso digital, maior será a necessidade de protegê-lo.</p>
+</blockquote>
+<p>Os riscos podem surgir de diferentes formas.</p>
+<p>Um sistema pode apresentar uma falha de programação.</p>
+<p>Um funcionário pode clicar em um link malicioso.</p>
+<p>Um servidor pode ser configurado incorretamente.</p>
+<p>Uma senha pode ser descoberta.</p>
+<p>Um equipamento pode parar de funcionar.</p>
+<p>Um criminoso pode tentar roubar informações.</p>
+<p>Um funcionário autorizado pode utilizar seus acessos de maneira indevida.</p>
+<p>Também podem ocorrer falhas sem qualquer ação criminosa, como incêndios, problemas elétricos, erros humanos e defeitos em equipamentos.</p>
+<p>Por isso, Cybersecurity não significa apenas “impedir hackers”.</p>
+<p>Ela envolve proteger sistemas e informações contra diferentes situações capazes de comprometer seu funcionamento ou causar prejuízos.</p>
+<hr />
+<h1 id="afinal-o-que-e-cybersecurity">Afinal, o que é Cybersecurity?<a class="headerlink" href="#afinal-o-que-e-cybersecurity" title="Permanent link">&para;</a></h1>
+<p>O termo <strong>Cybersecurity</strong>, traduzido normalmente como <strong>Segurança Cibernética</strong>, representa o conjunto de práticas utilizadas para proteger sistemas, redes, dispositivos, aplicações e informações contra ataques, acessos indevidos, danos e interrupções.</p>
+<p>O NIST, instituto norte-americano responsável por desenvolver diversos padrões e orientações técnicas, apresenta Cybersecurity como a proteção das informações por meio da prevenção, detecção e resposta a ataques. Outras definições do instituto também incluem a recuperação dos sistemas após um incidente.</p>
+<p>Essa definição pode parecer técnica em um primeiro momento.</p>
+<p>Vamos traduzi-la.</p>
+<blockquote>
+<p>Cybersecurity é tudo aquilo que fazemos para evitar que recursos digitais sejam acessados, modificados, destruídos ou interrompidos de maneira indevida — e para recuperar esses recursos quando algo dá errado.</p>
+</blockquote>
+<p>Observe que essa definição não menciona uma ferramenta específica.</p>
+<p>Cybersecurity não é um antivírus.</p>
+<p>Não é um firewall.</p>
+<p>Não é um programa de monitoramento.</p>
+<p>Não é o cara "Hackudão" com capuz diante de várias telas com um monte de código maluco.</p>
+<p>Esses elementos podem fazer parte da segurança, mas nenhum deles representa a área inteira.</p>
+<p>Cybersecurity é formada pela combinação de três componentes:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>flowchart LR
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    P[Pessoas] --- PR[Processos]
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    PR --- T[Tecnologia]
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    T --- P
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    P --&gt; S[Segurança Cibernética]
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    PR --&gt; S
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    T --&gt; S
+</code></pre></div>
+<h3 id="pessoas">Pessoas<a class="headerlink" href="#pessoas" title="Permanent link">&para;</a></h3>
+<p>São os usuários, analistas, gestores, desenvolvedores, clientes, fornecedores e todos os indivíduos que interagem com os sistemas.</p>
+<h3 id="processos">Processos<a class="headerlink" href="#processos" title="Permanent link">&para;</a></h3>
+<p>São as regras e os procedimentos que determinam como a organização deve prevenir, identificar e responder aos riscos.</p>
+<h3 id="tecnologia">Tecnologia<a class="headerlink" href="#tecnologia" title="Permanent link">&para;</a></h3>
+<p>São as ferramentas e os controles utilizados para proteger, monitorar e recuperar os ambientes.</p>
+<p>Uma organização pode comprar a melhor tecnologia disponível e ainda permanecer vulnerável caso seus funcionários não sejam treinados ou seus processos sejam mal definidos.</p>
+<p>Da mesma forma, uma empresa pode possuir boas políticas, mas não ter ferramentas suficientes para colocá-las em prática.</p>
+<p>A segurança depende do equilíbrio entre esses elementos.</p>
+<hr />
+<h1 id="uma-analogia-simples">Uma analogia simples<a class="headerlink" href="#uma-analogia-simples" title="Permanent link">&para;</a></h1>
+<p>Imagine uma casa.</p>
+<p>Ela pode possuir:</p>
+<ul>
+<li>muros;</li>
+<li>portões;</li>
+<li>fechaduras;</li>
+<li>câmeras;</li>
+<li>alarmes;</li>
+<li>sensores;</li>
+<li>iluminação externa;</li>
+<li>seguro residencial.</li>
+</ul>
+<p>Cada elemento oferece uma camada diferente de proteção.</p>
+<p>A fechadura dificulta a entrada.</p>
+<p>A câmera ajuda a observar atividades suspeitas.</p>
+<p>O alarme avisa quando uma invasão está acontecendo.</p>
+<p>O seguro ajuda na recuperação após um prejuízo.</p>
+<p>Mesmo com todos esses recursos, ainda não existe uma garantia absoluta de que nunca ocorrerá um problema.</p>
+<p>A lógica da Cybersecurity é semelhante.</p>
+<p>Uma empresa pode utilizar:</p>
+<ul>
+<li>senhas;</li>
+<li>autenticação multifator;</li>
+<li>firewalls;</li>
+<li>antivírus;</li>
+<li>backups;</li>
+<li>criptografia;</li>
+<li>monitoramento;</li>
+<li>políticas de acesso;</li>
+<li>treinamentos;</li>
+<li>planos de resposta a incidentes.</li>
+</ul>
+<p>Cada controle reduz uma parte do risco.</p>
+<p>Essa analogia também nos ensina algo essencial:</p>
+<blockquote>
+<p>Segurança não significa eliminar completamente todos os riscos. Significa conhecê-los, reduzi-los e estar preparado para responder quando necessário.</p>
+</blockquote>
+<hr />
+<h1 id="uma-breve-historia-da-seguranca-cibernetica">Uma breve história da segurança cibernética<a class="headerlink" href="#uma-breve-historia-da-seguranca-cibernetica" title="Permanent link">&para;</a></h1>
+<p>A preocupação com segurança não nasceu com os computadores.</p>
+<p>Durante séculos, governos, exércitos e organizações utilizaram códigos, controles físicos e métodos de proteção para preservar informações.</p>
+<p>Com o surgimento dos computadores, a informação começou a ser armazenada e processada digitalmente.</p>
+<p>Nos primeiros ambientes computacionais, os equipamentos eram grandes, caros e utilizados por poucas pessoas. A segurança estava bastante ligada ao controle físico: proteger a sala onde o computador estava instalado já era uma parte importante da proteção.</p>
+<p>À medida que diferentes usuários passaram a compartilhar computadores e, posteriormente, conectar equipamentos por meio de redes, novos problemas começaram a surgir.</p>
+<p>Não era mais suficiente controlar quem entrava na sala.</p>
+<p>Também era necessário controlar:</p>
+<ul>
+<li>quem podia acessar cada sistema;</li>
+<li>quais informações cada usuário podia visualizar;</li>
+<li>quais operações eram permitidas;</li>
+<li>como detectar comportamentos indevidos;</li>
+<li>como proteger dados transmitidos por uma rede.</li>
+</ul>
+<p>Em 1972, o National Bureau of Standards, posteriormente renomeado como NIST, estabeleceu formalmente seu programa de segurança de computadores. Nas décadas seguintes, o instituto passou a desenvolver padrões, guias de gestão de riscos, orientações de autenticação, criptografia e resposta a incidentes.</p>
+<p>Um acontecimento marcante ocorreu em novembro de 1988.</p>
+<p>Um programa conhecido como <strong>Morris Worm</strong> espalhou-se por sistemas conectados à ainda jovem internet e provocou interrupções significativas. Como consequência do incidente, a agência norte-americana DARPA solicitou a criação de uma equipe especializada em responder a emergências computacionais. Assim nasceu o CERT Coordination Center, uma das primeiras grandes referências em resposta a incidentes.</p>
+<p>Com a expansão da internet, a quantidade de dispositivos, usuários e serviços conectados cresceu de forma acelerada.</p>
+<p>Depois vieram:</p>
+<ul>
+<li>comércio eletrônico;</li>
+<li>serviços bancários digitais;</li>
+<li>redes sociais;</li>
+<li>smartphones;</li>
+<li>computação em nuvem;</li>
+<li>Internet das Coisas;</li>
+<li>inteligência artificial;</li>
+<li>ambientes industriais conectados.</li>
+</ul>
+<p>A superfície que precisa ser protegida tornou-se muito maior.</p>
+<p>Hoje, Cybersecurity não protege somente computadores tradicionais. Ela pode envolver veículos, hospitais, fábricas, câmeras, dispositivos domésticos, satélites, serviços financeiros, identidades digitais e infraestruturas essenciais para o funcionamento de uma sociedade.</p>
+<hr />
+<h1 id="o-que-a-cybersecurity-protege">O que a Cybersecurity protege?<a class="headerlink" href="#o-que-a-cybersecurity-protege" title="Permanent link">&para;</a></h1>
+<p>Quando falamos em segurança, podemos imaginar diferentes tipos de ativos.</p>
+<h2 id="1-informacoes">1. Informações<a class="headerlink" href="#1-informacoes" title="Permanent link">&para;</a></h2>
+<p>Informações podem incluir:</p>
+<ul>
+<li>dados pessoais;</li>
+<li>senhas;</li>
+<li>contratos;</li>
+<li>documentos;</li>
+<li>registros médicos;</li>
+<li>dados financeiros;</li>
+<li>pesquisas;</li>
+<li>códigos-fonte;</li>
+<li>estratégias empresariais.</li>
+</ul>
+<p>A informação pode estar armazenada em um computador, enviada por uma rede, impressa em papel ou até mesmo presente no conhecimento de uma pessoa.</p>
+<h2 id="2-dispositivos">2. Dispositivos<a class="headerlink" href="#2-dispositivos" title="Permanent link">&para;</a></h2>
+<p>São os equipamentos utilizados para processar ou acessar informações:</p>
+<ul>
+<li>computadores;</li>
+<li>celulares;</li>
+<li>servidores;</li>
+<li>roteadores;</li>
+<li>câmeras;</li>
+<li>sensores;</li>
+<li>equipamentos industriais;</li>
+<li>dispositivos inteligentes.</li>
+</ul>
+<h2 id="3-redes">3. Redes<a class="headerlink" href="#3-redes" title="Permanent link">&para;</a></h2>
+<p>As redes permitem que os dispositivos se comuniquem.</p>
+<p>Sem proteção adequada, um invasor pode tentar interceptar dados, acessar equipamentos ou utilizar a rede para alcançar outros sistemas.</p>
+<h2 id="4-aplicacoes">4. Aplicações<a class="headerlink" href="#4-aplicacoes" title="Permanent link">&para;</a></h2>
+<p>Aplicações são os sistemas que utilizamos:</p>
+<ul>
+<li>sites;</li>
+<li>aplicativos móveis;</li>
+<li>sistemas empresariais;</li>
+<li>lojas virtuais;</li>
+<li>plataformas bancárias;</li>
+<li>APIs;</li>
+<li>serviços na nuvem.</li>
+</ul>
+<p>O OWASP Top 10, por exemplo, é um documento de conscientização que reúne riscos críticos relacionados à segurança de aplicações web. A edição atual é a de 2025.</p>
+<h2 id="5-identidades">5. Identidades<a class="headerlink" href="#5-identidades" title="Permanent link">&para;</a></h2>
+<p>Uma identidade digital representa uma pessoa, serviço ou dispositivo dentro de um sistema.</p>
+<p>Proteger identidades significa garantir que:</p>
+<ul>
+<li>o usuário seja realmente quem afirma ser;</li>
+<li>somente pessoas autorizadas tenham acesso;</li>
+<li>cada usuário possua apenas as permissões necessárias;</li>
+<li>atividades importantes possam ser rastreadas.</li>
+</ul>
+<h2 id="6-operacoes">6. Operações<a class="headerlink" href="#6-operacoes" title="Permanent link">&para;</a></h2>
+<p>Às vezes, o objetivo mais importante não é proteger um arquivo específico, mas garantir que um serviço continue funcionando.</p>
+<p>Uma empresa de comércio eletrônico, por exemplo, depende da disponibilidade de sua plataforma.</p>
+<p>Caso o site fique fora do ar, mesmo que nenhuma informação seja roubada, a empresa poderá perder vendas, clientes e reputação.</p>
+<hr />
+<h1 id="os-tres-principios-fundamentais">Os três princípios fundamentais<a class="headerlink" href="#os-tres-principios-fundamentais" title="Permanent link">&para;</a></h1>
+<p>Grande parte da Segurança da Informação está baseada em três princípios conhecidos como <strong>Tríade CIA</strong>.</p>
+<p>A sigla vem dos termos em inglês:</p>
+<ul>
+<li><strong>Confidentiality:</strong> Confidencialidade;</li>
+<li><strong>Integrity:</strong> Integridade;</li>
+<li><strong>Availability:</strong> Disponibilidade.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>flowchart TD
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    S[Segurança da Informação]
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    S --&gt; C[Confidencialidade]
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    S --&gt; I[Integridade]
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    S --&gt; A[Disponibilidade]
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    C --&gt; C1[Somente pessoas autorizadas acessam]
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    I --&gt; I1[Dados permanecem corretos e confiáveis]
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>    A --&gt; A1[Sistemas e informações estão acessíveis]
+</code></pre></div>
+<h2 id="confidencialidade">Confidencialidade<a class="headerlink" href="#confidencialidade" title="Permanent link">&para;</a></h2>
+<p>Significa impedir que informações sejam acessadas por pessoas não autorizadas.</p>
+<p>Exemplo:</p>
+<p>Somente você e as pessoas autorizadas pelo banco devem conseguir visualizar os dados de sua conta.</p>
+<h2 id="integridade">Integridade<a class="headerlink" href="#integridade" title="Permanent link">&para;</a></h2>
+<p>Significa garantir que as informações não sejam modificadas de maneira indevida.</p>
+<p>Exemplo:</p>
+<p>Se você realizar uma transferência de R$ 100, ninguém deve conseguir alterar o valor para R$ 10.000 durante o processamento.</p>
+<h2 id="disponibilidade">Disponibilidade<a class="headerlink" href="#disponibilidade" title="Permanent link">&para;</a></h2>
+<p>Significa garantir que os sistemas e informações estejam acessíveis quando forem necessários.</p>
+<p>Exemplo:</p>
+<p>O aplicativo do banco precisa estar disponível para que você consiga pagar uma conta no vencimento.</p>
+<p>Os três princípios precisam trabalhar juntos.</p>
+<p>Um sistema totalmente inacessível pode manter os dados confidenciais, mas não é útil.</p>
+<p>Um sistema disponível, mas que permite alterações não autorizadas, também não é seguro.</p>
+<p>No próximo capítulo, estudaremos cada um desses princípios com maior profundidade.</p>
+<hr />
+<h1 id="traduzindo-o-tecniques">Traduzindo o “tecniquês”<a class="headerlink" href="#traduzindo-o-tecniques" title="Permanent link">&para;</a></h1>
+<p>Para compreender Cybersec, precisamos conhecer quatro palavras muito utilizadas:</p>
+<ul>
+<li>ativo;</li>
+<li>ameaça;</li>
+<li>vulnerabilidade;</li>
+<li>risco.</li>
+</ul>
+<h2 id="ativo">Ativo<a class="headerlink" href="#ativo" title="Permanent link">&para;</a></h2>
+<p>É qualquer recurso que possui valor e precisa ser protegido.</p>
+<p>Pode ser um computador, uma informação, um sistema, uma conta ou até a reputação de uma empresa.</p>
+<h2 id="ameaca">Ameaça<a class="headerlink" href="#ameaca" title="Permanent link">&para;</a></h2>
+<p>É algo que possui potencial para causar dano.</p>
+<p>Uma ameaça pode ser:</p>
+<ul>
+<li>um criminoso;</li>
+<li>um programa malicioso;</li>
+<li>um incêndio;</li>
+<li>um funcionário agindo de forma indevida;</li>
+<li>uma falha elétrica.</li>
+</ul>
+<h2 id="vulnerabilidade">Vulnerabilidade<a class="headerlink" href="#vulnerabilidade" title="Permanent link">&para;</a></h2>
+<p>É uma fraqueza que pode ser explorada ou causar um problema.</p>
+<p>Exemplos:</p>
+<ul>
+<li>software desatualizado;</li>
+<li>senha fraca;</li>
+<li>configuração incorreta;</li>
+<li>ausência de backup;</li>
+<li>funcionário sem treinamento.</li>
+</ul>
+<h2 id="risco">Risco<a class="headerlink" href="#risco" title="Permanent link">&para;</a></h2>
+<p>É a possibilidade de que uma ameaça explore uma vulnerabilidade e provoque um impacto negativo.</p>
+<p>Podemos visualizar essa relação assim:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>flowchart LR
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    A[Ameaça] --&gt;|Explora| V[Vulnerabilidade]
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    V --&gt;|Compromete| AT[Ativo]
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    AT --&gt;|Gera| I[Impacto]
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    I --&gt; R[Risco para a organização]
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    C[Controles de segurança] -. Reduzem .-&gt; V
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    C -. Reduzem .-&gt; I
+</code></pre></div>
+<h3 id="exemplo-simples">Exemplo simples<a class="headerlink" href="#exemplo-simples" title="Permanent link">&para;</a></h3>
+<p>Imagine uma loja com uma porta que não possui fechadura.</p>
+<ul>
+<li><strong>Ativo:</strong> produtos da loja;</li>
+<li><strong>ameaça:</strong> ladrão;</li>
+<li><strong>vulnerabilidade:</strong> porta sem fechadura;</li>
+<li><strong>risco:</strong> possibilidade de os produtos serem roubados;</li>
+<li><strong>controle:</strong> instalação de uma fechadura, câmera e alarme;</li>
+<li><strong>impacto:</strong> prejuízo financeiro e interrupção das atividades.</li>
+</ul>
+<p>No ambiente digital, a lógica é semelhante.</p>
+<hr />
+<h1 id="como-um-ataque-pode-acontecer">Como um ataque pode acontecer?<a class="headerlink" href="#como-um-ataque-pode-acontecer" title="Permanent link">&para;</a></h1>
+<p>Vamos imaginar um caso fictício.</p>
+<p>Um funcionário recebe um e-mail aparentemente enviado pelo setor financeiro.</p>
+<p>A mensagem informa que existe um documento urgente esperando por sua aprovação.</p>
+<p>O funcionário clica no link e encontra uma página muito parecida com a tela de acesso do Microsoft 365.</p>
+<p>Ele digita seu e-mail e sua senha.</p>
+<p>A página, porém, era falsa.</p>
+<p>O invasor captura as credenciais e tenta acessar a conta verdadeira.</p>
+<p>Depois de conseguir acesso, ele pesquisa mensagens, identifica contatos da empresa e tenta utilizar a conta comprometida para enganar outros funcionários.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>flowchart TD
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    A[Invasor prepara um e-mail falso]
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    A --&gt; B[Funcionário recebe a mensagem]
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    B --&gt; C[Clica no link]
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    C --&gt; D[Acessa uma página falsa]
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    D --&gt; E[Digita suas credenciais]
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    E --&gt; F[Invasor captura e-mail e senha]
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    F --&gt; G[Acessa a conta verdadeira]
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    G --&gt; H[Pesquisa informações internas]
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>    H --&gt; I[Tenta ampliar o ataque]
+</code></pre></div>
+<p>Esse exemplo envolve diversos conceitos:</p>
+<ul>
+<li><strong>engenharia social:</strong> manipulação de uma pessoa;</li>
+<li><strong>phishing:</strong> mensagem fraudulenta criada para enganar;</li>
+<li><strong>credenciais:</strong> informações utilizadas para autenticação;</li>
+<li><strong>acesso não autorizado:</strong> entrada realizada sem permissão;</li>
+<li><strong>movimentação do ataque:</strong> tentativa de alcançar novos usuários e recursos.</li>
+</ul>
+<p>O MITRE ATT&amp;CK organiza conhecimentos sobre comportamentos observados em adversários. Nesse modelo, as <strong>táticas</strong> representam os objetivos do atacante, enquanto as <strong>técnicas</strong> representam maneiras utilizadas para alcançar esses objetivos.</p>
+<hr />
+<h1 id="como-a-organizacao-poderia-se-proteger">Como a organização poderia se proteger?<a class="headerlink" href="#como-a-organizacao-poderia-se-proteger" title="Permanent link">&para;</a></h1>
+<p>Nenhum controle isolado resolveria completamente o problema.</p>
+<p>A empresa poderia combinar diferentes medidas.</p>
+<h2 id="antes-do-ataque">Antes do ataque<a class="headerlink" href="#antes-do-ataque" title="Permanent link">&para;</a></h2>
+<ul>
+<li>treinamento contra phishing;</li>
+<li>filtros de e-mail;</li>
+<li>autenticação multifator;</li>
+<li>política de senhas;</li>
+<li>limitação de privilégios;</li>
+<li>proteção dos dispositivos;</li>
+<li>processos para confirmar solicitações sensíveis.</li>
+</ul>
+<h2 id="durante-o-ataque">Durante o ataque<a class="headerlink" href="#durante-o-ataque" title="Permanent link">&para;</a></h2>
+<ul>
+<li>monitoramento de acessos;</li>
+<li>alertas para locais ou dispositivos desconhecidos;</li>
+<li>identificação de comportamentos anormais;</li>
+<li>bloqueio automático de atividades suspeitas;</li>
+<li>registro de eventos em logs.</li>
+</ul>
+<h2 id="depois-da-identificacao">Depois da identificação<a class="headerlink" href="#depois-da-identificacao" title="Permanent link">&para;</a></h2>
+<ul>
+<li>bloqueio da conta;</li>
+<li>redefinição da senha;</li>
+<li>encerramento das sessões abertas;</li>
+<li>análise dos acessos realizados;</li>
+<li>busca por outras contas afetadas;</li>
+<li>comunicação interna;</li>
+<li>revisão dos controles;</li>
+<li>documentação das lições aprendidas.</li>
+</ul>
+<p>É por isso que Cybersecurity não pode ser resumida a “impedir que o ataque aconteça”.</p>
+<p>Também precisamos:</p>
+<ul>
+<li>identificar;</li>
+<li>detectar;</li>
+<li>responder;</li>
+<li>recuperar;</li>
+<li>aprender.</li>
+</ul>
+<hr />
+<h1 id="o-ciclo-da-cybersecurity">O ciclo da Cybersecurity<a class="headerlink" href="#o-ciclo-da-cybersecurity" title="Permanent link">&para;</a></h1>
+<p>O NIST Cybersecurity Framework 2.0 organiza a gestão do risco cibernético em seis funções:</p>
+<ol>
+<li><strong>Govern — Governar</strong></li>
+<li><strong>Identify — Identificar</strong></li>
+<li><strong>Protect — Proteger</strong></li>
+<li><strong>Detect — Detectar</strong></li>
+<li><strong>Respond — Responder</strong></li>
+<li><strong>Recover — Recuperar</strong></li>
+</ol>
+<p>A função Govern foi adicionada como função central na versão 2.0, publicada em 2024. O conjunto oferece uma visão do ciclo de gerenciamento do risco cibernético.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>flowchart LR
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    G[Governar] --&gt; I[Identificar]
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    I --&gt; P[Proteger]
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    P --&gt; D[Detectar]
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    D --&gt; R[Responder]
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    R --&gt; RC[Recuperar]
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    RC --&gt; I
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>    G -. Orienta todas as funções .-&gt; P
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>    G -. Orienta todas as funções .-&gt; D
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>    G -. Orienta todas as funções .-&gt; R
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>    G -. Orienta todas as funções .-&gt; RC
+</code></pre></div>
+<h2 id="governar">Governar<a class="headerlink" href="#governar" title="Permanent link">&para;</a></h2>
+<p>Define responsabilidades, políticas, prioridades e a maneira como os riscos serão administrados.</p>
+<h2 id="identificar">Identificar<a class="headerlink" href="#identificar" title="Permanent link">&para;</a></h2>
+<p>Busca compreender:</p>
+<ul>
+<li>quais ativos existem;</li>
+<li>quais informações são importantes;</li>
+<li>quais vulnerabilidades estão presentes;</li>
+<li>quais ameaças são relevantes;</li>
+<li>quais riscos precisam de atenção.</li>
+</ul>
+<h2 id="proteger">Proteger<a class="headerlink" href="#proteger" title="Permanent link">&para;</a></h2>
+<p>Implementa controles para reduzir a probabilidade ou o impacto dos incidentes.</p>
+<p>Exemplos:</p>
+<ul>
+<li>controle de acesso;</li>
+<li>atualizações;</li>
+<li>backups;</li>
+<li>criptografia;</li>
+<li>treinamento;</li>
+<li>configurações seguras.</li>
+</ul>
+<h2 id="detectar">Detectar<a class="headerlink" href="#detectar" title="Permanent link">&para;</a></h2>
+<p>Busca perceber comportamentos suspeitos ou incidentes.</p>
+<p>Exemplos:</p>
+<ul>
+<li>análise de logs;</li>
+<li>alertas;</li>
+<li>monitoramento de rede;</li>
+<li>identificação de alterações indevidas.</li>
+</ul>
+<h2 id="responder">Responder<a class="headerlink" href="#responder" title="Permanent link">&para;</a></h2>
+<p>Define como agir após a identificação de um incidente.</p>
+<p>Exemplos:</p>
+<ul>
+<li>conter o ataque;</li>
+<li>investigar;</li>
+<li>comunicar as partes envolvidas;</li>
+<li>eliminar a causa;</li>
+<li>preservar evidências.</li>
+</ul>
+<h2 id="recuperar">Recuperar<a class="headerlink" href="#recuperar" title="Permanent link">&para;</a></h2>
+<p>Busca restaurar sistemas, informações e operações.</p>
+<p>Exemplos:</p>
+<ul>
+<li>recuperar backups;</li>
+<li>reconstruir equipamentos;</li>
+<li>restaurar serviços;</li>
+<li>acompanhar o retorno das atividades.</li>
+</ul>
+<p>Esse modelo demonstra que a segurança é um processo contínuo.</p>
+<p>Depois de responder e recuperar, a organização precisa utilizar o que aprendeu para melhorar sua identificação e proteção.</p>
+<hr />
+<h1 id="onde-encontramos-cybersecurity-no-cotidiano">Onde encontramos Cybersecurity no cotidiano?<a class="headerlink" href="#onde-encontramos-cybersecurity-no-cotidiano" title="Permanent link">&para;</a></h1>
+<p>Muitas medidas de segurança fazem parte do nosso dia sem que percebamos.</p>
+<h2 id="autenticacao-multifator">Autenticação multifator<a class="headerlink" href="#autenticacao-multifator" title="Permanent link">&para;</a></h2>
+<p>Quando um serviço solicita uma senha e um segundo fator, como um código ou uma confirmação no celular, está tentando reduzir a possibilidade de acesso indevido.</p>
+<p>Mesmo que a senha seja descoberta, o invasor ainda precisará do outro fator.</p>
+<h2 id="atualizacoes-de-software">Atualizações de software<a class="headerlink" href="#atualizacoes-de-software" title="Permanent link">&para;</a></h2>
+<p>Programas podem apresentar falhas.</p>
+<p>Quando essas falhas são corrigidas, os fabricantes disponibilizam atualizações.</p>
+<p>Adiar uma atualização pode manter uma vulnerabilidade conhecida no dispositivo.</p>
+<h2 id="backups">Backups<a class="headerlink" href="#backups" title="Permanent link">&para;</a></h2>
+<p>Backups são cópias utilizadas para recuperar informações.</p>
+<p>Eles podem ser importantes em casos de:</p>
+<ul>
+<li>exclusão acidental;</li>
+<li>defeito em equipamento;</li>
+<li>ransomware;</li>
+<li>corrupção de arquivos;</li>
+<li>desastres.</li>
+</ul>
+<h2 id="https">HTTPS<a class="headerlink" href="#https" title="Permanent link">&para;</a></h2>
+<p>O HTTPS ajuda a proteger a comunicação entre o navegador e o servidor por meio de criptografia.</p>
+<p>O cadeado, entretanto, não garante que todo o conteúdo do site seja confiável. Um site fraudulento também pode utilizar HTTPS.</p>
+<h2 id="controle-de-acesso">Controle de acesso<a class="headerlink" href="#controle-de-acesso" title="Permanent link">&para;</a></h2>
+<p>Quando um funcionário só consegue visualizar as informações necessárias para seu trabalho, existe um controle de acesso em funcionamento.</p>
+<h2 id="conscientizacao">Conscientização<a class="headerlink" href="#conscientizacao" title="Permanent link">&para;</a></h2>
+<p>Quando uma empresa ensina seus funcionários a identificar mensagens suspeitas, ela está tratando pessoas como uma parte importante da segurança.</p>
+<p>A CISA destaca quatro medidas simples para aumentar a proteção cotidiana: reconhecer tentativas de phishing, utilizar senhas fortes, habilitar autenticação multifator e manter os softwares atualizados.</p>
+<hr />
+<h1 id="exemplo-completo-uma-loja-virtual">Exemplo completo: uma loja virtual<a class="headerlink" href="#exemplo-completo-uma-loja-virtual" title="Permanent link">&para;</a></h1>
+<p>Imagine uma empresa que vende produtos em marketplaces e em seu próprio site.</p>
+<p>Ela possui os seguintes ativos:</p>
+<ul>
+<li>contas dos marketplaces;</li>
+<li>sistema de estoque;</li>
+<li>dados dos clientes;</li>
+<li>computadores;</li>
+<li>contas bancárias;</li>
+<li>plataforma de comércio eletrônico;</li>
+<li>e-mails corporativos;</li>
+<li>contratos com fornecedores.</li>
+</ul>
+<p>Agora imagine que a senha principal do marketplace seja reutilizada em outro serviço.</p>
+<p>Esse outro serviço sofre um vazamento.</p>
+<p>Um criminoso encontra a combinação de e-mail e senha e tenta utilizá-la no marketplace.</p>
+<p>Caso a senha seja a mesma e não exista autenticação multifator, ele poderá conseguir acesso.</p>
+<p>Depois disso, poderá:</p>
+<ul>
+<li>alterar dados bancários;</li>
+<li>modificar anúncios;</li>
+<li>acessar informações de clientes;</li>
+<li>cancelar pedidos;</li>
+<li>criar promoções falsas;</li>
+<li>interromper as vendas.</li>
+</ul>
+<p>Como a Cybersecurity atuaria?</p>
+<h3 id="governar_1">Governar<a class="headerlink" href="#governar_1" title="Permanent link">&para;</a></h3>
+<p>A empresa define responsáveis, políticas e requisitos mínimos de segurança.</p>
+<h3 id="identificar_1">Identificar<a class="headerlink" href="#identificar_1" title="Permanent link">&para;</a></h3>
+<p>Ela mapeia as contas importantes e percebe que a conta do marketplace é crítica.</p>
+<h3 id="proteger_1">Proteger<a class="headerlink" href="#proteger_1" title="Permanent link">&para;</a></h3>
+<p>Implementa senha exclusiva, gerenciador de senhas, autenticação multifator e limitação de acessos.</p>
+<h3 id="detectar_1">Detectar<a class="headerlink" href="#detectar_1" title="Permanent link">&para;</a></h3>
+<p>Configura alertas de novos acessos e monitora alterações sensíveis.</p>
+<h3 id="responder_1">Responder<a class="headerlink" href="#responder_1" title="Permanent link">&para;</a></h3>
+<p>Caso um acesso suspeito seja identificado, bloqueia a conta, redefine credenciais e verifica modificações.</p>
+<h3 id="recuperar_1">Recuperar<a class="headerlink" href="#recuperar_1" title="Permanent link">&para;</a></h3>
+<p>Restaura configurações, corrige dados alterados e acompanha o funcionamento da operação.</p>
+<p>Esse exemplo mostra que Cybersecurity está diretamente relacionada ao funcionamento do negócio.</p>
+<p>Ela não existe apenas para proteger computadores.</p>
+<p>Ela ajuda a proteger vendas, clientes, operações, reputação e continuidade.</p>
+<hr />
+<h1 id="quais-sao-as-principais-areas-da-cybersecurity">Quais são as principais áreas da Cybersecurity?<a class="headerlink" href="#quais-sao-as-principais-areas-da-cybersecurity" title="Permanent link">&para;</a></h1>
+<p>Cybersecurity é uma área ampla.</p>
+<p>Os nomes dos cargos e as responsabilidades podem variar entre as organizações, mas algumas divisões são comuns.</p>
+<h2 id="blue-team">Blue Team<a class="headerlink" href="#blue-team" title="Permanent link">&para;</a></h2>
+<p>Profissionais responsáveis pela defesa dos ambientes.</p>
+<p>Podem atuar com:</p>
+<ul>
+<li>monitoramento;</li>
+<li>detecção;</li>
+<li>análise de alertas;</li>
+<li>investigação;</li>
+<li>resposta a incidentes;</li>
+<li>melhoria dos controles.</li>
+</ul>
+<h2 id="red-team-e-seguranca-ofensiva">Red Team e Segurança Ofensiva<a class="headerlink" href="#red-team-e-seguranca-ofensiva" title="Permanent link">&para;</a></h2>
+<p>Profissionais que simulam ataques autorizados para identificar fraquezas antes que criminosos as explorem.</p>
+<p>Pentest e Red Team não são exatamente a mesma atividade, embora estejam relacionados.</p>
+<h2 id="security-operations-center-soc">Security Operations Center — SOC<a class="headerlink" href="#security-operations-center-soc" title="Permanent link">&para;</a></h2>
+<p>O SOC é uma estrutura dedicada ao monitoramento e tratamento de eventos de segurança.</p>
+<p>Um analista de SOC pode investigar alertas, consultar logs, identificar falsos positivos e encaminhar incidentes.</p>
+<h2 id="incident-response">Incident Response<a class="headerlink" href="#incident-response" title="Permanent link">&para;</a></h2>
+<p>Atua na preparação, investigação, contenção, eliminação e recuperação relacionadas a incidentes.</p>
+<h2 id="digital-forensics">Digital Forensics<a class="headerlink" href="#digital-forensics" title="Permanent link">&para;</a></h2>
+<p>Busca identificar, coletar, preservar e analisar evidências digitais.</p>
+<h2 id="application-security-appsec">Application Security — AppSec<a class="headerlink" href="#application-security-appsec" title="Permanent link">&para;</a></h2>
+<p>Trabalha para tornar aplicações mais seguras durante seu desenvolvimento e operação.</p>
+<h2 id="cloud-security">Cloud Security<a class="headerlink" href="#cloud-security" title="Permanent link">&para;</a></h2>
+<p>Concentra-se na proteção de recursos, identidades, dados e serviços executados em ambientes de nuvem.</p>
+<h2 id="identity-and-access-management-iam">Identity and Access Management — IAM<a class="headerlink" href="#identity-and-access-management-iam" title="Permanent link">&para;</a></h2>
+<p>Administra identidades, autenticação, autorizações e permissões.</p>
+<h2 id="governance-risk-and-compliance-grc">Governance, Risk and Compliance — GRC<a class="headerlink" href="#governance-risk-and-compliance-grc" title="Permanent link">&para;</a></h2>
+<p>Relaciona segurança a políticas, riscos, controles, requisitos legais e objetivos organizacionais.</p>
+<h2 id="cyber-threat-intelligence-cti">Cyber Threat Intelligence — CTI<a class="headerlink" href="#cyber-threat-intelligence-cti" title="Permanent link">&para;</a></h2>
+<p>Transforma informações sobre ameaças em conhecimento útil para decisões.</p>
+<p>É justamente nessa área que começamos a conectar segurança, investigação e inteligência.</p>
+<hr />
+<h1 id="o-que-cybersecurity-tem-a-ver-com-cti">O que Cybersecurity tem a ver com CTI?<a class="headerlink" href="#o-que-cybersecurity-tem-a-ver-com-cti" title="Permanent link">&para;</a></h1>
+<p>Agora que já aprendemos o que é Cybersec, suas aplicações e principais áreas, gostaria de fazer uma pequena relação entre Cybersec e a área que mais me identifiquei.</p>
+<p>Imagine que uma empresa esteja recebendo diversos e-mails de phishing.</p>
+<p>Bloquear cada mensagem individualmente pode resolver o problema imediato, mas algumas perguntas permanecem:</p>
+<ul>
+<li>As mensagens fazem parte da mesma campanha?</li>
+<li>Outros domínios estão sendo utilizados?</li>
+<li>Qual infraestrutura está por trás do ataque?</li>
+<li>Quais organizações também foram afetadas?</li>
+<li>Que técnicas o adversário costuma utilizar?</li>
+<li>Qual pode ser seu próximo movimento?</li>
+<li>Quais controles precisam ser priorizados?</li>
+</ul>
+<p>A Cyber Threat Intelligence procura coletar, analisar e contextualizar informações para responder a perguntas como essas.</p>
+<p>Ela ajuda a transformar dados isolados em inteligência acionável.</p>
+<p>Um endereço IP, por exemplo, é apenas um dado.</p>
+<p>Quando descobrimos que esse endereço faz parte de uma infraestrutura utilizada em uma campanha, está relacionado a determinados domínios e apresenta comportamentos específicos, começamos a construir contexto.</p>
+<p>A inteligência pode ajudar equipes defensivas a:</p>
+<ul>
+<li>priorizar ameaças;</li>
+<li>desenvolver detecções;</li>
+<li>bloquear infraestruturas maliciosas;</li>
+<li>compreender adversários;</li>
+<li>apoiar investigações;</li>
+<li>comunicar riscos;</li>
+<li>antecipar possíveis ações.</li>
+</ul>
+<p>Por isso, construir uma boa base em Cybersecurity é importante antes de se aprofundar em CTI.</p>
+<p>Para compreender o comportamento de um adversário, precisamos entender redes, sistemas, identidades, vulnerabilidades, ataques, detecção e resposta.</p>
+<hr />
+<h1 id="equivocos-comuns-de-quem-esta-comecando">Equívocos comuns de quem está começando:<a class="headerlink" href="#equivocos-comuns-de-quem-esta-comecando" title="Permanent link">&para;</a></h1>
+<h2 id="instalar-um-antivirus-deixa-o-computador-totalmente-seguro">“Instalar um antivírus deixa o computador totalmente seguro.”<a class="headerlink" href="#instalar-um-antivirus-deixa-o-computador-totalmente-seguro" title="Permanent link">&para;</a></h2>
+<p>O antivírus é apenas uma camada.</p>
+<p>Ele não elimina riscos relacionados a senhas fracas, configurações incorretas, engenharia social, falta de backups ou permissões excessivas.</p>
+<h2 id="cybersecurity-serve-apenas-para-impedir-ataques">“Cybersecurity serve apenas para impedir ataques.”<a class="headerlink" href="#cybersecurity-serve-apenas-para-impedir-ataques" title="Permanent link">&para;</a></h2>
+<p>Também precisamos detectar, responder, recuperar e aprender com os incidentes.</p>
+<h2 id="mais-tecnologia-sempre-significa-mais-seguranca">“Mais tecnologia sempre significa mais segurança.”<a class="headerlink" href="#mais-tecnologia-sempre-significa-mais-seguranca" title="Permanent link">&para;</a></h2>
+<p>Uma ferramenta mal configurada ou sem pessoas capazes de utilizá-la pode criar uma falsa sensação de proteção.</p>
+<hr />
+<h1 id="o-que-voce-precisa-lembrar">O que você precisa lembrar<a class="headerlink" href="#o-que-voce-precisa-lembrar" title="Permanent link">&para;</a></h1>
+<ul>
+<li>Cybersecurity protege sistemas, redes, dispositivos, aplicações, identidades, informações e operações.</li>
+<li>Segurança envolve pessoas, processos e tecnologia.</li>
+<li>Não existe risco zero.</li>
+<li>Um ativo é algo que possui valor.</li>
+<li>Uma ameaça pode causar dano.</li>
+<li>Uma vulnerabilidade é uma fraqueza.</li>
+<li>Um risco surge quando uma ameaça pode explorar uma vulnerabilidade e gerar impacto.</li>
+<li>Prevenir não é suficiente: também precisamos detectar, responder e recuperar.</li>
+<li>A Cybersecurity possui diversas áreas, como SOC, Blue Team, AppSec, IAM, GRC, resposta a incidentes e CTI.</li>
+<li>Compreender os fundamentos é mais importante do que simplesmente decorar ferramentas.</li>
+</ul>
+<hr />
+<h1 id="glossario">Glossário<a class="headerlink" href="#glossario" title="Permanent link">&para;</a></h1>
+<h3 id="ameaca_1">Ameaça<a class="headerlink" href="#ameaca_1" title="Permanent link">&para;</a></h3>
+<p>Qualquer circunstância ou agente com potencial para causar dano a um ativo.</p>
+<h3 id="aplicacao">Aplicação<a class="headerlink" href="#aplicacao" title="Permanent link">&para;</a></h3>
+<p>Programa ou sistema desenvolvido para executar uma função para o usuário ou para outro sistema.</p>
+<h3 id="ativo_1">Ativo<a class="headerlink" href="#ativo_1" title="Permanent link">&para;</a></h3>
+<p>Recurso que possui valor para uma pessoa ou organização e precisa ser protegido.</p>
+<h3 id="ataque-cibernetico">Ataque cibernético<a class="headerlink" href="#ataque-cibernetico" title="Permanent link">&para;</a></h3>
+<p>Tentativa de comprometer sistemas, dispositivos, redes ou informações.</p>
+<h3 id="autenticacao">Autenticação<a class="headerlink" href="#autenticacao" title="Permanent link">&para;</a></h3>
+<p>Processo utilizado para verificar a identidade de um usuário, serviço ou dispositivo.</p>
+<h3 id="autenticacao-multifator-mfa">Autenticação multifator — MFA<a class="headerlink" href="#autenticacao-multifator-mfa" title="Permanent link">&para;</a></h3>
+<p>Método que utiliza dois ou mais fatores para confirmar uma identidade.</p>
+<h3 id="autorizacao">Autorização<a class="headerlink" href="#autorizacao" title="Permanent link">&para;</a></h3>
+<p>Processo que determina o que uma identidade autenticada pode acessar ou fazer.</p>
+<h3 id="backup">Backup<a class="headerlink" href="#backup" title="Permanent link">&para;</a></h3>
+<p>Cópia de informações utilizada para recuperação.</p>
+<h3 id="blue-team_1">Blue Team<a class="headerlink" href="#blue-team_1" title="Permanent link">&para;</a></h3>
+<p>Equipe ou conjunto de profissionais responsáveis por atividades defensivas.</p>
+<h3 id="controle-de-seguranca">Controle de segurança<a class="headerlink" href="#controle-de-seguranca" title="Permanent link">&para;</a></h3>
+<p>Medida administrativa, técnica ou física utilizada para reduzir riscos.</p>
+<h3 id="credencial">Credencial<a class="headerlink" href="#credencial" title="Permanent link">&para;</a></h3>
+<p>Informação utilizada durante a autenticação, como senha, certificado ou token.</p>
+<h3 id="cyber-threat-intelligence-cti_1">Cyber Threat Intelligence — CTI<a class="headerlink" href="#cyber-threat-intelligence-cti_1" title="Permanent link">&para;</a></h3>
+<p>Conhecimento produzido por meio da coleta e análise de informações sobre ameaças cibernéticas.</p>
+<h3 id="cybersecurity">Cybersecurity<a class="headerlink" href="#cybersecurity" title="Permanent link">&para;</a></h3>
+<p>Conjunto de práticas voltadas à proteção de sistemas, redes, dispositivos, aplicações e informações no ambiente digital.</p>
+<h3 id="engenharia-social">Engenharia social<a class="headerlink" href="#engenharia-social" title="Permanent link">&para;</a></h3>
+<p>Manipulação de pessoas para obter informações, acessos ou induzir determinada ação.</p>
+<h3 id="firewall">Firewall<a class="headerlink" href="#firewall" title="Permanent link">&para;</a></h3>
+<p>Tecnologia utilizada para controlar comunicações de rede de acordo com regras definidas.</p>
+<h3 id="incidente-de-seguranca">Incidente de segurança<a class="headerlink" href="#incidente-de-seguranca" title="Permanent link">&para;</a></h3>
+<p>Ocorrência que compromete ou pode comprometer a segurança de um sistema ou informação.</p>
+<h3 id="log">Log<a class="headerlink" href="#log" title="Permanent link">&para;</a></h3>
+<p>Registro gerado por um sistema, aplicação ou dispositivo sobre atividades e eventos.</p>
+<h3 id="malware">Malware<a class="headerlink" href="#malware" title="Permanent link">&para;</a></h3>
+<p>Programa ou código criado para executar ações maliciosas.</p>
+<h3 id="phishing">Phishing<a class="headerlink" href="#phishing" title="Permanent link">&para;</a></h3>
+<p>Tentativa de enganar uma pessoa, normalmente por mensagens falsas, para obter informações ou induzir ações.</p>
+<h3 id="ransomware">Ransomware<a class="headerlink" href="#ransomware" title="Permanent link">&para;</a></h3>
+<p>Tipo de malware que busca impedir o acesso a sistemas ou informações e exigir pagamento.</p>
+<h3 id="risco_1">Risco<a class="headerlink" href="#risco_1" title="Permanent link">&para;</a></h3>
+<p>Possibilidade de uma situação produzir impacto negativo sobre um ativo ou objetivo.</p>
+<h3 id="security-operations-center-soc_1">Security Operations Center — SOC<a class="headerlink" href="#security-operations-center-soc_1" title="Permanent link">&para;</a></h3>
+<p>Estrutura dedicada ao monitoramento, análise e tratamento de eventos de segurança.</p>
+<h3 id="vulnerabilidade_1">Vulnerabilidade<a class="headerlink" href="#vulnerabilidade_1" title="Permanent link">&para;</a></h3>
+<p>Fraqueza que pode ser explorada por uma ameaça ou contribuir para um incidente.</p>
+<hr />
+<h1 id="referencias">Referências<a class="headerlink" href="#referencias" title="Permanent link">&para;</a></h1>
+<p>Os materiais abaixo foram utilizados como referências conceituais e históricas. Sempre que possível, esta série prioriza documentação oficial e fontes reconhecidas.</p>
+<ol>
+<li>
+<p><a href="https://csrc.nist.gov/glossary/term/cybersecurity">NIST — Cybersecurity Glossary</a>
+   Definições oficiais e referências relacionadas ao conceito de Cybersecurity.</p>
+</li>
+<li>
+<p><a href="https://csrc.nist.gov/glossary/term/cyber_security">NIST — Cyber Security Glossary</a>
+   Definição de segurança cibernética e documentos de origem.</p>
+</li>
+<li>
+<p><a href="https://csrc.nist.gov/glossary/term/infosec">NIST — Information Security Glossary</a>
+   Definições relacionadas à Segurança da Informação.</p>
+</li>
+<li>
+<p><a href="https://www.nist.gov/cyberframework">NIST — Cybersecurity Framework 2.0</a>
+   Framework para gestão de riscos de Cybersecurity.</p>
+</li>
+<li>
+<p><a href="https://csrc.nist.gov/nist-cyber-history">NIST — Cybersecurity Program History and Timeline</a>
+   Linha do tempo sobre a evolução dos programas de segurança do NIST.</p>
+</li>
+<li>
+<p><a href="https://www.cisa.gov/secure-our-world">CISA — Secure Our World</a>
+   Orientações de segurança para usuários e organizações.</p>
+</li>
+<li>
+<p><a href="https://www.sei.cmu.edu/history-of-innovation/fostering-growth-in-professional-cyber-incident-management/">CERT/CC — History of Cyber Incident Management</a>
+   Informações sobre o Morris Worm e a criação do CERT Coordination Center.</p>
+</li>
+<li>
+<p><a href="https://attack.mitre.org/tactics/enterprise/">MITRE ATT&amp;CK — Enterprise Tactics</a>
+   Base de conhecimento sobre objetivos e comportamentos de adversários.</p>
+</li>
+<li>
+<p><a href="https://attack.mitre.org/techniques/enterprise/">MITRE ATT&amp;CK — Enterprise Techniques</a>
+   Técnicas e subtécnicas utilizadas por adversários.</p>
+</li>
+<li>
+<p><a href="https://owasp.org/Top10/2025/">OWASP Top 10:2025</a>
+    Documento de conscientização sobre riscos críticos em aplicações web.</p>
+</li>
+</ol>
+<hr />
+<h1 id="o-que-vem-a-seguir">O que vem a seguir?<a class="headerlink" href="#o-que-vem-a-seguir" title="Permanent link">&para;</a></h1>
+<p>Agora que entendemos o que é Cybersecurity e por que ela existe, precisamos conhecer os princípios que orientam a proteção das informações.</p>
+<p>No <strong>Capítulo 002</strong>, estudaremos a <strong>Tríade CIA</strong>:</p>
+<ul>
+<li>Confidencialidade;</li>
+<li>Integridade;</li>
+<li>Disponibilidade.</li>
+</ul>
+<p>Esses três princípios formam uma das bases mais importantes da Segurança da Informação.</p>
+<hr />
+<blockquote>
+<p><strong>Cybersecurity não começa quando aprendemos uma ferramenta.</strong></p>
+<p><strong>Ela começa quando entendemos o problema que aquela ferramenta foi criada para resolver.</strong></p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Rodapé" >
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Visão Geral">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Visão Geral
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../redes/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Visão Geral">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Próximo
+              </span>
+              <div class="md-ellipsis">
+                Visão Geral
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "navigation.instant", "search.highlight", "search.suggest", "content.code.copy", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

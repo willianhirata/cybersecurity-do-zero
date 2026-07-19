@@ -1,15 +1,30 @@
-/* Aumenta o tamanho do logo */
+/* Logo maior */
 .md-header__button.md-logo img,
 .md-header__button.md-logo svg {
-    height: 52px;
+    height: 56px;
     width: auto;
 }
 
-/* Aumenta a altura da barra superior */
+/* Barra superior mais alta */
 .md-header {
     height: 72px;
 }
 
 .md-header__inner {
     height: 72px;
+}
+
+/* Banner mais elegante */
+.md-typeset img {
+    border-radius: 12px;
+}
+
+/* Cartões */
+.grid.cards > ul > li {
+    border-radius: 14px;
+    transition: .2s;
+}
+
+.grid.cards > ul > li:hover {
+    transform: translateY(-4px);
 }

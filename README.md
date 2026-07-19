@@ -4,6 +4,10 @@
   <img src="./assets/banner.png" alt="Cybersecurity do Zero" width="100%">
 </p>
 
+Este projeto documenta minha jornada de estudos em Cybersecurity.
+>
+> O objetivo é construir uma documentação aberta, gratuita e prática para quem deseja aprender os fundamentos da área, explicando não apenas **como fazer**, mas principalmente **por que as coisas funcionam**.
+
 #  Cybersecurity do Zero
 
 ### **Entender antes de decorar.**

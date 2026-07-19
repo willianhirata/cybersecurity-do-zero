@@ -5,30 +5,37 @@ site_url: https://willianhirata.github.io/cybersecurity-do-zero/
 
 theme:
   name: material
+
   language: pt-BR
 
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+
   palette:
-    - scheme: default
-      primary: blue
+
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
       accent: cyan
       toggle:
         icon: material/weather-night
-        name: Alternar para modo escuro
+        name: Ativar modo escuro
 
-    - scheme: slate
-      primary: blue
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
       accent: cyan
       toggle:
         icon: material/weather-sunny
-        name: Alternar para modo claro
+        name: Ativar modo claro
 
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
     - navigation.top
     - navigation.footer
-    - navigation.instant
     - search.highlight
     - search.suggest
     - content.code.copy

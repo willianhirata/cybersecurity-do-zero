@@ -1,19 +1,45 @@
+<div class="hero-banner">
+  <img src="assets/banner.png" alt="Cybersecurity do Zero">
+</div>
+
+<div class="hero-content" markdown>
+
 # Cybersecurity do Zero
 
-<div class="hero" markdown>
+## Entender antes de decorar.
 
-## Aprenda cybersecurity com fundamentos, prática e documentação organizada
-
-Um projeto criado para registrar minha jornada de aprendizado e ajudar outras pessoas que estão começando na área.
+Uma documentação criada para registrar minha jornada de aprendizado em cybersecurity e ajudar outras pessoas que também estão começando na área.
 
 [Começar pelos fundamentos](fundamentos/){ .md-button .md-button--primary }
-[Ver no GitHub](https://github.com/willianhirata/cybersecurity-do-zero){ .md-button }
+[Ver projeto no GitHub](https://github.com/willianhirata/cybersecurity-do-zero){ .md-button }
 
 </div>
 
 ---
 
-## Escolha sua trilha
+## Sobre o projeto
+
+O **Cybersecurity do Zero** é um projeto público de estudo, documentação e prática.
+
+A proposta é construir uma base sólida antes de avançar para ferramentas, certificações e áreas mais específicas da segurança da informação.
+
+Aqui você encontrará:
+
+- explicações simples e organizadas;
+- conceitos fundamentais de cybersecurity;
+- redes e sistemas operacionais;
+- segurança defensiva;
+- OSINT e Threat Intelligence;
+- laboratórios e exercícios práticos;
+- referências para aprofundamento.
+
+!!! tip "A ideia principal"
+
+    Ferramentas mudam. Os fundamentos permanecem.
+
+---
+
+## Comece por aqui
 
 <div class="grid cards" markdown>
 
@@ -21,7 +47,7 @@ Um projeto criado para registrar minha jornada de aprendizado e ajudar outras pe
 
     ---
 
-    Conceitos essenciais para compreender segurança da informação antes de estudar ferramentas.
+    Conceitos essenciais de segurança da informação, riscos, ameaças, vulnerabilidades e controles.
 
     [:octicons-arrow-right-24: Começar](fundamentos/)
 
@@ -29,7 +55,7 @@ Um projeto criado para registrar minha jornada de aprendizado e ajudar outras pe
 
     ---
 
-    Protocolos, comunicação entre dispositivos, endereçamento e análise de tráfego.
+    Protocolos, modelos de comunicação, endereçamento, serviços e análise de tráfego.
 
     [:octicons-arrow-right-24: Explorar](redes/)
 
@@ -45,7 +71,7 @@ Um projeto criado para registrar minha jornada de aprendizado e ajudar outras pe
 
     ---
 
-    Estrutura do sistema, usuários, serviços, eventos e recursos de segurança.
+    Estrutura do sistema, usuários, serviços, logs e recursos de segurança.
 
     [:octicons-arrow-right-24: Explorar](windows/)
 
@@ -53,7 +79,7 @@ Um projeto criado para registrar minha jornada de aprendizado e ajudar outras pe
 
     ---
 
-    Monitoramento, detecção, análise de logs e resposta a incidentes.
+    Monitoramento, análise de eventos, detecção de ameaças e resposta a incidentes.
 
     [:octicons-arrow-right-24: Explorar](blue-team/)
 
@@ -61,7 +87,7 @@ Um projeto criado para registrar minha jornada de aprendizado e ajudar outras pe
 
     ---
 
-    Coleta e análise de informações disponíveis em fontes públicas.
+    Coleta e análise de informações disponíveis publicamente.
 
     [:octicons-arrow-right-24: Explorar](osint/)
 
@@ -69,7 +95,7 @@ Um projeto criado para registrar minha jornada de aprendizado e ajudar outras pe
 
     ---
 
-    Contextualização de ameaças, indicadores de comprometimento e inteligência aplicada.
+    Inteligência de ameaças, indicadores de comprometimento e contextualização de ataques.
 
     [:octicons-arrow-right-24: Explorar](threat-intelligence/)
 
@@ -85,13 +111,19 @@ Um projeto criado para registrar minha jornada de aprendizado e ajudar outras pe
 
 ---
 
-## Como estudar por este projeto
+## Trilha recomendada
 
-!!! tip "Entender antes de decorar"
-
-    Não tente memorizar ferramentas e comandos sem compreender o problema que eles resolvem.
-
-O conteúdo foi organizado para seguir esta sequência:
+Para quem está começando, esta é a sequência sugerida:
 
 ```text
-Fundamentos → Redes → Sistemas operacionais → Segurança defensiva → Prática
+Fundamentos
+    ↓
+Redes
+    ↓
+Linux e Windows
+    ↓
+Blue Team
+    ↓
+OSINT e Threat Intelligence
+    ↓
+Laboratórios

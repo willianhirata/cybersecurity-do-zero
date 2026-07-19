@@ -7,7 +7,7 @@ theme:
   name: material
   language: pt-BR
 
-  logo: assets/logo.svg
+  logo: assets/logo.png
   favicon: assets/favicon.ico
 
   palette:
@@ -40,7 +40,7 @@ theme:
     - content.tabs.link
 
 extra_css:
-  - stylesheets/extra.css
+  - extra.css
 
 plugins:
   - search

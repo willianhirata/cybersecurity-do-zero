@@ -1,0 +1,15 @@
+/* Aumenta o tamanho do logo */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+    height: 52px;
+    width: auto;
+}
+
+/* Aumenta a altura da barra superior */
+.md-header {
+    height: 72px;
+}
+
+.md-header__inner {
+    height: 72px;
+}

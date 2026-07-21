@@ -83,6 +83,7 @@ nav:
   - Fundamentos:
       - Visão Geral: fundamentos/index.md
       - O que é Cybersecurity?: fundamentos/001-o-que-e-cybersecurity.md
+      - A Tríade CIA: fundamentos/002-triade-cia.md
 
   - Redes:
       - Visão Geral: redes/index.md

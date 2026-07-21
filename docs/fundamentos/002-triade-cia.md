@@ -1,8 +1,12 @@
+---
+title: A Tríade CIA
+description: Entenda os pilares de Confidencialidade, Integridade e Disponibilidade com exemplos simples e aplicações práticas.
+image: assets/social/banner-linkedin.png
+---
+
 # Capítulo 002 — A Tríade CIA
 
 > **Entender antes de decorar.**
-
----
 
 | Informação | Detalhes |
 |---|---|

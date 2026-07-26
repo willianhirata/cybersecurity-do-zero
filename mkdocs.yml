@@ -87,6 +87,7 @@ nav:
       - A Tríade CIA: fundamentos/002-triade-cia.md
       - Princípio do Menor Privilégio: fundamentos/003-principio-do-menor-privilegio.md
       - Ameaças: fundamentos/004-ameacas.md
+      - Vulnerabilidades: fundamentos/005-vulnerabilidades.md
 
   - Redes:
       - Visão Geral: redes/index.md

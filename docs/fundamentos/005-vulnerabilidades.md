@@ -89,7 +89,7 @@ Em outras palavras:
 
 > **A vulnerabilidade é o ponto fraco que torna um cenário de dano possível ou mais fácil de acontecer.**
 
-!!! note "Uma vulnerabilidade pode existir sem ter sido explorada"
+ "Uma vulnerabilidade pode existir sem ter sido explorada"
     A presença de uma vulnerabilidade não confirma que ocorreu um ataque.
 
     Ela indica que existe uma condição que pode ser utilizada ou acionada e que precisa ser analisada no contexto do ambiente.
@@ -139,7 +139,7 @@ O incidente ocorre quando a segurança é comprometida ou ameaçada de forma rel
 | **Correção** | Como eliminamos a causa da vulnerabilidade? | Aplicação de atualização ou mudança no código |
 | **Mitigação** | Como reduzimos a exploração ou o impacto? | Restringir o acesso enquanto a correção não é aplicada |
 
-!!! warning "Exposição e vulnerabilidade não são exatamente a mesma coisa"
+ "Exposição e vulnerabilidade não são exatamente a mesma coisa"
     Um serviço publicado na internet pode estar funcionando como planejado e ainda assim aumentar a exposição do ativo.
 
     Quando uma exposição desnecessária se combina com uma falha, configuração insegura ou controle insuficiente, o cenário se torna mais preocupante.
@@ -214,7 +214,7 @@ Exemplos:
 - alertas críticos sem responsável definido;
 - ausência de procedimento para revogar acessos.
 
-!!! note "O usuário não é a vulnerabilidade"
+ "O usuário não é a vulnerabilidade"
     Pessoas podem cometer erros ou ser manipuladas, mas classificá-las simplesmente como vulnerabilidades esconde as causas reais.
 
     O problema pode estar em treinamento insuficiente, processos confusos, permissões excessivas, ausência de validação ou controles mal projetados.
@@ -333,7 +333,7 @@ Uma pontuação pode ser apresentada com uma classificação qualitativa:
 | 7,0 a 8,9 | Alta |
 | 9,0 a 10,0 | Crítica |
 
-!!! warning "CVSS mede severidade, não o risco completo da organização"
+ "CVSS mede severidade, não o risco completo da organização"
     Uma vulnerabilidade crítica em um sistema isolado e sem dados relevantes pode receber prioridade menor do que uma vulnerabilidade alta explorada ativamente em um serviço essencial exposto à internet.
 
     O número ajuda na análise, mas não substitui contexto.
@@ -541,7 +541,7 @@ Essa decisão deve possuir:
 - controles compensatórios;
 - registro do impacto possível.
 
-!!! warning "Ignorar não é o mesmo que aceitar"
+ "Ignorar não é o mesmo que aceitar"
     Aceitação de risco é uma decisão consciente, registrada e aprovada.
 
     Deixar um achado aberto sem responsável, análise ou prazo representa falta de tratamento.
@@ -635,7 +635,7 @@ A Cyber Threat Intelligence ajuda a responder perguntas que uma pontuação isol
 
 Informações de ameaça ajudam a transformar uma lista técnica em uma decisão contextualizada.
 
-!!! note "Inteligência não substitui inventário"
+ "Inteligência não substitui inventário"
     Saber que uma vulnerabilidade está sendo explorada é importante, mas a organização ainda precisa descobrir se utiliza o produto, quais versões possui, onde estão os ativos e quem é responsável por eles.
 
 ---
@@ -661,28 +661,28 @@ Ao receber um novo achado, faça perguntas como:
 
 ## Exercício de fixação
 
-??? question "1. Um sistema desatualizado possui uma vulnerabilidade conhecida, mas não há evidência de ataque. Existe um incidente confirmado?"
+Questão "1. Um sistema desatualizado possui uma vulnerabilidade conhecida, mas não há evidência de ataque. Existe um incidente confirmado?"
     Não. Existe uma vulnerabilidade que precisa ser analisada e tratada, mas sua presença não confirma que ocorreu exploração ou incidente.
 
-??? question "2. Uma interface administrativa está publicada na internet sem necessidade. Isso representa o quê?"
+Questão "2. Uma interface administrativa está publicada na internet sem necessidade. Isso representa o quê?"
     Representa uma exposição desnecessária. Caso existam credenciais fracas, configuração insegura ou uma falha no serviço, essa exposição pode facilitar a exploração.
 
-??? question "3. Qual é a diferença entre CVE e CWE?"
+Questão "3. Qual é a diferença entre CVE e CWE?"
     O CVE identifica uma vulnerabilidade específica divulgada publicamente. O CWE descreve um tipo de fraqueza que pode gerar diferentes vulnerabilidades.
 
-??? question "4. Uma vulnerabilidade com CVSS 9,8 deve sempre ser corrigida antes de todas as outras?"
+Questão "4. Uma vulnerabilidade com CVSS 9,8 deve sempre ser corrigida antes de todas as outras?"
     Não necessariamente. A prioridade também depende de exploração ativa, exposição, criticidade do ativo, impacto e controles existentes.
 
-??? question "5. Aplicar um patch confirma que o sistema nunca foi comprometido?"
+Questão "5. Aplicar um patch confirma que o sistema nunca foi comprometido?"
     Não. A correção remove ou reduz a vulnerabilidade, mas ainda pode ser necessário investigar atividades ocorridas antes da atualização.
 
-??? question "6. Um scanner informou uma vulnerabilidade. O resultado deve ser aceito automaticamente?"
+Questão "6. Um scanner informou uma vulnerabilidade. O resultado deve ser aceito automaticamente?"
     Não. O achado precisa ser validado com versão, configuração, evidências e contexto do ativo, pois ferramentas podem gerar falsos positivos e resultados incompletos.
 
-??? question "7. Bloquear temporariamente o acesso a um serviço vulnerável é correção ou mitigação?"
+Questão "7. Bloquear temporariamente o acesso a um serviço vulnerável é correção ou mitigação?"
     Normalmente é uma mitigação, pois reduz a possibilidade de exploração sem necessariamente remover a causa da vulnerabilidade.
 
-??? question "8. Por que o inventário é importante para a gestão de vulnerabilidades?"
+Questão "8. Por que o inventário é importante para a gestão de vulnerabilidades?"
     Porque a organização precisa saber quais ativos, produtos e versões possui para identificar o que está afetado, definir responsáveis e acompanhar a correção.
 
 ---

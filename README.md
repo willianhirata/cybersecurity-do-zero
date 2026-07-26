@@ -90,7 +90,7 @@ Construir uma documentação gratuita, organizada e acessível que ajude estudan
 
 | Módulo                |     Situação    |  Progresso |
 | :-------------------- | :-------------: | :--------: |
-| 🟢 Fundamentos        | 🚧 Em andamento | **4 / 15** |
+| 🟢 Fundamentos        | 🚧 Em andamento | **5 / 15** |
 | ⚪ Redes               |   ⏳ Planejado   | **0 / 12** |
 | ⚪ Linux               |   ⏳ Planejado   | **0 / 18** |
 | ⚪ Windows             |   ⏳ Planejado   | **0 / 15** |
@@ -110,7 +110,7 @@ Construir uma documentação gratuita, organizada e acessível que ajude estudan
 | ✅ 002 — Tríade CIA                                                              |      Publicado     |
 | ✅ 003 — Princípio do Menor Privilégio                                           |      Publicado     |
 | ✅ 004 — Ameaças                                                                 |      Publicado     |
-| ⏳ 005 — Vulnerabilidades                                                         |      Planejado     |
+| ✅ 005 — Vulnerabilidades                                                        |      Publicado     |
 
 ---
 

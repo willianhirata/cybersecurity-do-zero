@@ -33,7 +33,7 @@ Ao final deste capítulo, você será capaz de:
 
 ---
 
-## Como sempre, vamos começar utilizando nossa imaginação.
+## Bora imaginar?
 
 No capítulo anterior, imaginamos uma casa com uma janela que não fechava corretamente. A janela era uma **vulnerabilidade**: uma fraqueza que poderia ser aproveitada.
 
@@ -86,7 +86,7 @@ Em outras palavras:
 
 > **Risco é a incerteza sobre um cenário de dano e suas possíveis consequências para a organização.**
 
-!!! note "Risco não significa certeza"
+ "Risco não significa certeza"
     Um risco pode existir mesmo que o evento nunca aconteça.
 
     A função da análise não é prever o futuro com perfeição, mas apoiar decisões melhores diante da incerteza.
@@ -158,7 +158,7 @@ flowchart LR
     I -. limitam o impacto .-> G
 ```
 
-!!! warning "Não existe uma fórmula universal"
+ "Não existe uma fórmula universal"
     Expressões como `Risco = Ameaça × Vulnerabilidade × Impacto` podem ajudar a memorizar os componentes do raciocínio, mas não representam uma fórmula universal aplicável a todas as organizações.
 
     Métodos de avaliação utilizam critérios, escalas e modelos diferentes. O importante é que a organização defina seu método e o aplique de forma consistente.
@@ -208,7 +208,7 @@ Representa as consequências caso o cenário aconteça. Pode afetar:
 | **Médio** | Interrupção relevante ou custo moderado |
 | **Alto** | Paralisação crítica, perda significativa ou impacto amplo |
 
-!!! note "Impacto técnico e impacto para o negócio não são a mesma coisa"
+ "Impacto técnico e impacto para o negócio não são a mesma coisa"
     O comprometimento de um servidor de testes isolado e o de um servidor de faturamento podem ser tecnicamente semelhantes, mas produzir consequências muito diferentes.
 
 ---
@@ -241,7 +241,7 @@ Exemplo simplificado: um incidente com chance anual estimada em **20%** e impact
 
 Isso não significa que a perda real será exatamente R$ 20.000. O valor apenas apoia comparações e decisões.
 
-!!! warning "Número não elimina incerteza"
+ "Número não elimina incerteza"
     O resultado depende da qualidade dos dados, das premissas e do modelo. Muitas casas decimais não tornam uma estimativa frágil mais precisa.
 
 ---
@@ -314,7 +314,7 @@ flowchart LR
     H --> D
 ```
 
-!!! note "Controle reduz risco, mas também pode falhar"
+ "Controle reduz risco, mas também pode falhar"
     A análise deve considerar se o controle está realmente implementado, funcionando, monitorado e adequado ao cenário.
 
     Um backup que nunca foi testado não deve receber a mesma confiança de um processo de restauração validado periodicamente.
@@ -418,7 +418,7 @@ O **registro de riscos**, ou *risk register*, organiza os cenários e acompanha 
 | **Responsável e prazo** | Definir acompanhamento |
 | **Status e revisão** | Controlar andamento e reavaliação |
 
-!!! warning "O risco precisa de um responsável"
+ "O risco precisa de um responsável"
     O responsável não precisa executar todas as ações, mas deve possuir autoridade e visão do impacto para acompanhar e decidir sobre o risco.
 
 ---
@@ -437,7 +437,7 @@ Aplica controles para diminuir a possibilidade ou o impacto, como MFA, correçã
 
 Distribui parte das consequências ou responsabilidades por meio de seguro, contrato ou serviço especializado.
 
-!!! note "Transferir não significa eliminar"
+ "Transferir não significa eliminar"
     A organização ainda pode enfrentar indisponibilidade, perda de confiança, obrigações legais e danos aos clientes.
 
 ### Aceitar
@@ -542,7 +542,7 @@ Se novas informações mostrarem que:
 
 então a possibilidade pode precisar ser reavaliada.
 
-!!! note "Inteligência reduz incerteza, mas não toma a decisão"
+ "Inteligência reduz incerteza, mas não toma a decisão"
     A CTI fornece contexto sobre ameaças. A decisão de risco ainda depende dos ativos, do impacto, dos controles e dos objetivos da organização.
 
 ---
@@ -570,28 +570,28 @@ Ao estudar um cenário, faça perguntas como:
 
 ## Exercício de fixação
 
-??? question "1. Uma vulnerabilidade crítica representa automaticamente um risco crítico?"
+Questão "1. Uma vulnerabilidade crítica representa automaticamente um risco crítico?"
     Não. O risco depende também do ativo, da exposição, das ameaças, do impacto e dos controles.
 
-??? question "2. Qual é a diferença entre risco e incidente?"
+Questão "2. Qual é a diferença entre risco e incidente?"
     O risco representa um cenário incerto. O incidente é um evento que compromete ou ameaça comprometer a segurança.
 
-??? question "3. Dois sistemas com a mesma vulnerabilidade possuem o mesmo risco?"
+Questão "3. Dois sistemas com a mesma vulnerabilidade possuem o mesmo risco?"
     Não. Eles podem ter exposição, criticidade, impacto e controles diferentes.
 
-??? question "4. O que é risco residual?"
+Questão "4. O que é risco residual?"
     É o risco que permanece depois que os controles são considerados.
 
-??? question "5. Seguro cibernético elimina o risco?"
+Questão "5. Seguro cibernético elimina o risco?"
     Não. Pode compartilhar parte do impacto financeiro, mas não elimina as demais consequências.
 
-??? question "6. Aceitar significa ignorar?"
+Questão "6. Aceitar significa ignorar?"
     Não. A aceitação deve ser consciente, autorizada, registrada e revisada.
 
-??? question "7. A matriz substitui a descrição do cenário?"
+Questão "7. A matriz substitui a descrição do cenário?"
     Não. Ela resume a classificação, mas não explica o contexto.
 
-??? question "8. Como o SOC influencia a avaliação?"
+Questão "8. Como o SOC influencia a avaliação?"
     Fornecendo evidências sobre tentativas, incidentes, controles, visibilidade e tempo de resposta.
 
 ---

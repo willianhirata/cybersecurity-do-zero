@@ -88,6 +88,7 @@ nav:
       - Princípio do Menor Privilégio: fundamentos/003-principio-do-menor-privilegio.md
       - Ameaças: fundamentos/004-ameacas.md
       - Vulnerabilidades: fundamentos/005-vulnerabilidades.md
+      - Riscos: fundamentos/006-riscos.md
 
   - Redes:
       - Visão Geral: redes/index.md

@@ -144,7 +144,7 @@ Por isso, uma arquitetura segura não deveria depender exclusivamente de:
 - uma pessoa específica;
 - um único fornecedor.
 
-!!! note "A Defesa em Profundidade não promete segurança absoluta"
+ "A Defesa em Profundidade não promete segurança absoluta"
     A existência de várias camadas não elimina todos os riscos.
 
     O objetivo é aumentar a dificuldade para o atacante, reduzir oportunidades, melhorar a visibilidade e limitar as consequências caso uma falha aconteça.
@@ -269,7 +269,7 @@ Diversidade pode envolver:
 - cópias de dados em ambientes separados;
 - formas independentes de validação.
 
-!!! warning "Diversidade não significa comprar muitas ferramentas"
+ "Diversidade não significa comprar muitas ferramentas"
     Adicionar produtos sem integração, manutenção ou objetivo claro aumenta custo e complexidade.
 
     O importante é reduzir dependências e cobrir caminhos diferentes do cenário de risco.
@@ -510,7 +510,7 @@ Exemplos:
 - recuperação de desastre;
 - retorno controlado à operação.
 
-!!! note "Um controle pode exercer mais de uma função"
+ "Um controle pode exercer mais de uma função"
     Um EDR pode detectar uma execução suspeita, bloquear o processo e fornecer dados para investigação.
 
     Uma classificação ajuda a organizar o raciocínio, mas não limita o controle a uma única função.
@@ -875,7 +875,7 @@ Controles incluem:
 - definição de RTO e RPO;
 - exercícios periódicos.
 
-!!! warning "Backup não é sinônimo de recuperação"
+ "Backup não é sinônimo de recuperação"
     Uma cópia somente possui valor quando pode ser localizada, acessada e restaurada dentro da necessidade da organização.
 
     O processo precisa ser testado antes do incidente.
@@ -1253,7 +1253,7 @@ então a organização pode revisar suas camadas:
 | Exclusão de backups | Cópias imutáveis e credenciais independentes |
 | Movimentação lateral | Segmentação, restrição de protocolos e detecção |
 
-!!! note "Inteligência orienta prioridades"
+ "Inteligência orienta prioridades"
     CTI não substitui a gestão de riscos.
 
     Ela adiciona contexto sobre ameaças reais para que a organização fortaleça as camadas mais relevantes.
@@ -1297,28 +1297,28 @@ Imagine uma pequena empresa que utiliza:
 
 Analise o cenário e responda:
 
-??? question "1. Quais pontos únicos de falha podem ser identificados?"
+Questão "1. Quais pontos únicos de falha podem ser identificados?"
     A conta administrativa compartilhada, o backup conectado ao mesmo ambiente, a dependência exclusiva do antivírus e a ausência de monitoramento centralizado são exemplos importantes.
 
-??? question "2. Quais controles poderiam fortalecer a camada de identidade?"
+Questão "2. Quais controles poderiam fortalecer a camada de identidade?"
     Contas individuais, MFA, menor privilégio, contas administrativas separadas, revisão de acessos e remoção rápida de contas antigas.
 
-??? question "3. Como proteger melhor o backup?"
+Questão "3. Como proteger melhor o backup?"
     Utilizar credenciais independentes, cópias offline ou imutáveis, separação do ambiente, retenção adequada e testes periódicos de restauração.
 
-??? question "4. O antivírus sozinho representa Defesa em Profundidade?"
+Questão "4. O antivírus sozinho representa Defesa em Profundidade?"
     Não. Ele cobre apenas parte do risco de endpoint e precisa ser combinado com configuração segura, atualizações, controle de aplicações, logs, EDR, segmentação e resposta.
 
-??? question "5. Qual seria o papel de um SIEM?"
+Questão "5. Qual seria o papel de um SIEM?"
     Centralizar e correlacionar eventos, apoiar detecções e facilitar investigações. Ele não substitui os controles preventivos nem a resposta humana.
 
-??? question "6. Quais controles ajudariam caso uma senha fosse roubada?"
+Questão "6. Quais controles ajudariam caso uma senha fosse roubada?"
     MFA, acesso condicional, dispositivo confiável, menor privilégio, alertas de login, limitação de sessão e revogação rápida.
 
-??? question "7. Qual camada reduz o impacto de ransomware depois do comprometimento?"
+Questão "7. Qual camada reduz o impacto de ransomware depois do comprometimento?"
     Segmentação, menor privilégio, controle de aplicações, EDR, resposta rápida e backups protegidos e testados podem limitar o impacto.
 
-??? question "8. Como validar se a estratégia funciona?"
+Questão "8. Como validar se a estratégia funciona?"
     Por meio de testes de restauração, simulações controladas, auditoria de acessos, validação de alertas, testes de segmentação e exercícios de resposta.
 
 ---

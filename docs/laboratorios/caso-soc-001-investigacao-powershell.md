@@ -1,4 +1,4 @@
----
+<img width="1919" height="873" alt="image" src="https://github.com/user-attachments/assets/b0f4b931-23b8-4b96-a89b-b5576b67ee4b" />---
 title: Caso SOC #001 — Investigação de execução do PowerShell
 description: Análise prática de logs do Windows utilizando Sysmon, Elastic Defend e Elastic Security para investigar uma execução do PowerShell.
 ---
@@ -21,7 +21,7 @@ description: Análise prática de logs do Windows utilizando Sysmon, Elastic Def
 
 ## Introdução
 
-Depois de preparar a máquina virtual, instalar o Elastic Agent, configurar o Elastic Defend e integrar os eventos do Sysmon ao Elastic, chegou o momento de começar a utilizar o laboratório como um analista de SOC.
+Depois de preparar a máquina virtual, instalar o Elastic Agent, configurar o Elastic Defend e integrar os eventos do Sysmon ao Elastic, chegou o momento de botar a mão na massa e começar a praticar.
 
 Neste primeiro caso, vamos investigar uma execução do **PowerShell** identificada em uma estação Windows.
 
@@ -30,23 +30,6 @@ O PowerShell é uma ferramenta legítima e muito utilizada por administradores. 
 Por isso, encontrar `powershell.exe` nos logs não significa automaticamente que ocorreu um ataque.
 
 > **O processo é apenas o ponto de partida. O contexto é o que permite entender o evento.**
-
----
-
-## Cenário da investigação
-
-Durante o monitoramento do endpoint, foi identificada a execução do PowerShell na máquina do laboratório.
-
-Como analistas, precisamos responder:
-
-- quando a execução aconteceu;
-- em qual máquina;
-- qual usuário executou o processo;
-- qual processo iniciou o PowerShell;
-- qual linha de comando foi utilizada;
-- quais processos foram iniciados depois;
-- se existem outras evidências relacionadas;
-- se a atividade deve ser classificada como legítima, suspeita ou maliciosa.
 
 ---
 
@@ -78,71 +61,17 @@ Cada fonte possui sua própria forma de observar e estruturar o evento.
 
 ---
 
-## Imagem 1 — Apresentação do caso
+## Cenário da investigação
 
-<!--
-Sugestão de arquivo:
-assets/caso-soc-001/01-apresentacao-do-caso.png
 
-Inclua aqui a imagem de abertura contendo:
-- título do caso;
-- cenário;
-- perguntas da investigação;
-- arquitetura resumida do laboratório.
--->
 
-![Apresentação do Caso SOC 001](assets/caso-soc-001/01-apresentacao-do-caso.png)
-
-> **Comentário da análise:**  
-> Antes de abrir os logs, é importante definir o que estamos tentando descobrir. Uma investigação sem perguntas claras pode se transformar apenas em uma sequência de cliques sem direção.
-
----
-
-## Geração controlada da atividade
-
-Para este primeiro exercício, a atividade será gerada de forma controlada dentro da máquina virtual.
-
-Abra o Prompt de Comando e execute:
-
-```cmd
-powershell.exe -NoProfile -Command "whoami; hostname; Get-Process | Select-Object -First 5"
-```
-
-Esse comando inicia o PowerShell e realiza três ações simples:
-
-1. identifica o usuário atual;
-2. identifica o nome da máquina;
-3. lista alguns processos em execução.
-
-O comportamento esperado pode ser representado assim:
-
-```text
-explorer.exe
-└── cmd.exe
-    └── powershell.exe
-        ├── whoami.exe
-        └── hostname.exe
-```
-
-!!! note "Atividade controlada"
-    O objetivo não é simular um malware neste primeiro caso. Queremos conhecer exatamente a atividade executada para depois comparar o que aconteceu com o que foi registrado nos logs.
-
----
+Durante o monitoramento do endpoint, foi identificada a execução do PowerShell na máquina do laboratório.
 
 ## Imagem 2 — Execução do comando na máquina virtual
 
-<!--
-Sugestão de arquivo:
-assets/caso-soc-001/02-execucao-controlada.png
 
-Inclua um print do Prompt de Comando mostrando:
-- o comando executado;
-- o resultado de whoami;
-- o hostname;
-- parte da saída de Get-Process.
 
-Evite mostrar senhas, tokens, endereços de e-mail pessoais ou outras informações sensíveis.
--->
+
 
 ![Execução controlada do PowerShell](assets/caso-soc-001/02-execucao-controlada.png)
 

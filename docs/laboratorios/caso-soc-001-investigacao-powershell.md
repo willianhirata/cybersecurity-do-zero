@@ -62,26 +62,26 @@ Cada fonte possui sua própria forma de observar e estruturar o evento.
 
 ## Cenário da investigação
 
-## Imagem 1 — Execução do comando na máquina virtual
+## 1 — Execução do comando na máquina virtual
 
-![Apresentação do Caso SOC 001](assets/caso-soc-001/soc-001-1.JPG)
+![Apresentação do Caso SOC 001](../assets/caso-soc-001/soc-001-1.JPG)
 
 ---
 
-## Imagem 2 — Triagem Inicial
+## 2 — Triagem Inicial
 
 Durante o monitoramento do endpoint, foi identificada a execução do PowerShell na máquina do laboratório.
 
-![Apresentação do Caso SOC 001](assets/caso-soc-001/soc-001-2.JPG)
+![Apresentação do Caso SOC 001](../assets/caso-soc-001/soc-001-2.JPG)
 
 > **Comentário da análise:**
 > “Comecei delimitando o período, host e os processos envolvidos. Esse filtro reduz o ruído e ajuda a construir a sequência dos acontecimentos.”
 
 ---
 
-## Imagem 3 — Processo pai e linha de comando
+## 3 — Processo pai e linha de comando
 
-![Apresentação do Caso SOC 001](assets/caso-soc-001/soc-001-3.JPG)
+![Apresentação do Caso SOC 001](../assets/caso-soc-001/soc-001-3.JPG)
 
 Ao expandir a linha de comando, podemos identificar as seguintes informações:
 
@@ -97,14 +97,14 @@ process.args: powershell.exe-NoProfile-Commandwhoami; hostname; Get-Process | Se
 > **Comentário da análise:**  
 > "A atividade foi gerada de forma controlada. Como sabemos exatamente qual comando foi executado, podemos verificar se a telemetria coletada representa corretamente o comportamento observado na máquina."
 
-![Apresentação do Caso SOC 001](assets/caso-soc-001/soc-001-4.JPG)
+![Apresentação do Caso SOC 001](../assets/caso-soc-001/soc-001-4.JPG)
 
 > **Comentário da análise:**
 > “O PowerShell foi iniciado pelo cmd.exe. A linha de comando mostra que foram executados comandos de identificação do usuário, da máquina e dos processos ativos.”
 
 ---
 
-## Imagem 5 — Processos filhos
+## Imagem 4 — Processos filhos
 
 ![Apresentação do Caso SOC 001](assets/caso-soc-001/soc-001-5.JPG)
 

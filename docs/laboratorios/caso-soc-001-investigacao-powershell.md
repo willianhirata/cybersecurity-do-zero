@@ -1,5 +1,3 @@
-title: Caso SOC #001 — Investigação de execução do PowerShell
-description: Análise prática de logs do Windows utilizando Sysmon, Elastic Defend e Elastic Security para investigar uma execução do PowerShell.
 ---
 
 # Caso SOC #001 — Investigação de execução do PowerShell

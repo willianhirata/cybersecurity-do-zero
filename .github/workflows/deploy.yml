@@ -28,17 +28,17 @@ jobs:
       - name: Configurar Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.x"
+          python-version: "3.12"
           cache: pip
 
-      - name: Install dependencies
-  run: pip install -r requirements.txt
+      - name: Instalar dependências
+        run: python -m pip install -r requirements.txt
 
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5
 
       - name: Construir site
-        run: mkdocs build
+        run: python -m mkdocs build --clean
 
       - name: Enviar arquivos do site
         uses: actions/upload-pages-artifact@v4
@@ -47,7 +47,6 @@ jobs:
 
   deploy:
     name: Publicar site
-
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

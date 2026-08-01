@@ -36,7 +36,7 @@ Ao final deste capítulo, você será capaz de:
 
 ---
 
-## Como sempre, vamos começar utilizando nossa imaginação.
+## Bora imaginar?
 
 Imagine uma empresa instalada em um grande prédio.
 
@@ -159,7 +159,7 @@ Por isso, o foco deixa de ser apenas proteger a borda e passa a ser proteger **c
 
 > **A rede informa parte do contexto, mas não deve ser utilizada como prova suficiente de confiança.**
 
-!!! note "Zero Trust não significa confiança igual a zero"
+ "Zero Trust não significa confiança igual a zero"
     O objetivo não é impedir todas as pessoas de trabalhar nem tratar qualquer ação como maliciosa.
 
     O objetivo é remover a confiança automática e substituí-la por decisões de acesso baseadas em políticas, evidências e contexto.
@@ -551,7 +551,7 @@ flowchart TD
     PE --> H[Permitir, limitar, negar ou revogar]
 ```
 
-!!! note "Componentes lógicos não significam obrigatoriamente produtos separados"
+ "Componentes lógicos não significam obrigatoriamente produtos separados"
     Uma única plataforma pode exercer várias funções.
 
     Da mesma forma, uma função pode depender de diversos sistemas integrados.
@@ -1366,7 +1366,7 @@ Podemos utilizar os eventos para responder:
 - A postura do endpoint mudou?
 - A sessão deveria continuar confiável?
 
-!!! note "Telemetria não é decisão de acesso"
+ "Telemetria não é decisão de acesso"
     Sysmon e Elastic ajudam a observar e investigar.
 
     Para uma arquitetura completa, essas informações precisam participar de políticas e pontos capazes de permitir, negar, limitar ou revogar acessos.
@@ -1455,34 +1455,34 @@ Imagine uma empresa com as seguintes características:
 
 Analise o cenário.
 
-??? question "1. Por que a VPN não é suficiente para estabelecer confiança?"
+Questão "1. Por que a VPN não é suficiente para estabelecer confiança?"
     Porque ela protege o canal e conecta o usuário à rede, mas não confirma sozinha a postura do dispositivo, a necessidade do acesso, o privilégio adequado nem o comportamento da sessão.
 
-??? question "2. Qual é o risco de permitir acesso amplo à rede depois da conexão?"
+Questão "2. Qual é o risco de permitir acesso amplo à rede depois da conexão?"
     Uma credencial ou dispositivo comprometido pode alcançar recursos desnecessários e facilitar movimentação lateral.
 
-??? question "3. Quais melhorias podem ser aplicadas à identidade?"
+Questão "3. Quais melhorias podem ser aplicadas à identidade?"
     MFA, contas administrativas separadas, menor privilégio, revisão de acessos, sessões limitadas e autenticação baseada em risco.
 
-??? question "4. Como os dispositivos pessoais deveriam ser tratados?"
+Questão "4. Como os dispositivos pessoais deveriam ser tratados?"
     Devem ser identificados e avaliados. Dependendo do risco, podem receber acesso limitado, utilizar ambiente isolado ou ser impedidos de acessar dados sensíveis.
 
-??? question "5. Por que confiar apenas no IP interno é inadequado?"
+Questão "5. Por que confiar apenas no IP interno é inadequado?"
     Porque endereços e dispositivos internos também podem estar comprometidos. A localização deve ser apenas um dos elementos da decisão.
 
-??? question "6. Qual seria o papel da segmentação?"
+Questão "6. Qual seria o papel da segmentação?"
     Restringir os caminhos disponíveis e impedir que uma sessão autorizada para um recurso alcance sistemas desnecessários.
 
-??? question "7. Por que centralizar logs é importante?"
+Questão "7. Por que centralizar logs é importante?"
     Para correlacionar identidades, dispositivos e recursos, reconhecer comportamentos anômalos, investigar e ajustar políticas.
 
-??? question "8. O que deveria acontecer quando o risco aumenta durante a sessão?"
+Questão "8. O que deveria acontecer quando o risco aumenta durante a sessão?"
     A sessão pode ser reavaliada, limitada, submetida a nova autenticação ou revogada, dependendo da política.
 
-??? question "9. Zero Trust exige substituir todo o ambiente de uma vez?"
+Questão "9. Zero Trust exige substituir todo o ambiente de uma vez?"
     Não. A evolução pode começar por casos prioritários e ser expandida gradualmente.
 
-??? question "10. Qual seria um bom primeiro caso de uso?"
+Questão "10. Qual seria um bom primeiro caso de uso?"
     O acesso administrativo ou o acesso remoto a um sistema crítico, pois possuem risco elevado e permitem aplicar políticas mais claras.
 
 ---

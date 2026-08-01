@@ -104,7 +104,7 @@ process.args: powershell.exe-NoProfile-Commandwhoami; hostname; Get-Process | Se
 
 ---
 
-## Imagem 4 — Processos filhos
+## 4 — Processos filhos
 
 ![Apresentação do Caso SOC 001](../assets/caso-soc-001/soc-001-5.JPG)
 

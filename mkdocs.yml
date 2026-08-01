@@ -112,3 +112,5 @@ nav:
 
   - Laboratórios:
       - Visão Geral: laboratorios/index.md
+      - Soc-001: laboratorios/caso-soc-001-investigacao-powershell.md
+

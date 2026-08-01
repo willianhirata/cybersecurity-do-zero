@@ -106,7 +106,7 @@ process.args: powershell.exe-NoProfile-Commandwhoami; hostname; Get-Process | Se
 
 ## Imagem 4 — Processos filhos
 
-![Apresentação do Caso SOC 001](assets/caso-soc-001/soc-001-5.JPG)
+![Apresentação do Caso SOC 001](..assets/caso-soc-001/soc-001-5.JPG)
 
 > **Comentário da análise:**
 > “Os eventos seguintes confirmam que o PowerShell iniciou ferramentas nativas de descoberta. Esse comportamento também pode ser utilizado por atacantes, mas precisa ser analisado dentro do contexto.”

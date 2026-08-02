@@ -91,6 +91,7 @@ nav:
       - Vulnerabilidades: fundamentos/005-vulnerabilidades.md
       - Riscos: fundamentos/006-riscos.md
       - Defesa em Profundidade: fundamentos/007-defesa-em-profundidade.md
+      - Zero Trust: fundamentos/008-zero-trust.md
 
   - Redes:
       - Visão Geral: redes/index.md

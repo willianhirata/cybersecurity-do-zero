@@ -92,6 +92,7 @@ nav:
       - Riscos: fundamentos/006-riscos.md
       - Defesa em Profundidade: fundamentos/007-defesa-em-profundidade.md
       - Zero Trust: fundamentos/008-zero-trust.md
+      - Autenticação, Autorização e Accounting AAA: fundamentos/009-aaa.md
 
   - Redes:
       - Visão Geral: redes/index.md

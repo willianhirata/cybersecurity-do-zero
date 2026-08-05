@@ -139,7 +139,7 @@ protege a confidencialidade
 
 A ofuscação dificulta a compreensão de um conteúdo, mas não oferece necessariamente a mesma segurança de um mecanismo criptográfico.
 
-!!! warning "Parecer ilegível não significa estar protegido"
+"Parecer ilegível não significa estar protegido"
     Dados codificados, comprimidos ou ofuscados podem parecer confusos sem estarem criptografados.
 
 ---
@@ -271,7 +271,7 @@ Algoritmos conhecidos incluem:
 - SHA-512;
 - SHA-3.
 
-!!! warning "MD5 e SHA-1 não devem ser escolhidos para novas aplicações de segurança"
+"MD5 e SHA-1 não devem ser escolhidos para novas aplicações de segurança"
     Esses algoritmos possuem fraquezas conhecidas, principalmente relacionadas a colisões.
 
     Eles ainda podem aparecer em sistemas antigos ou indicadores, mas isso não os torna adequados para novos projetos.
@@ -361,7 +361,7 @@ Exemplos de mecanismos projetados para esse cenário incluem:
 
 O salt ajuda a impedir que senhas iguais produzam exatamente o mesmo valor armazenado.
 
-!!! note "Criptografar senhas não costuma ser a solução correta"
+"Criptografar senhas não costuma ser a solução correta"
     Em uma autenticação normal, o sistema precisa verificar a senha, e não recuperá-la.
 
 ---
@@ -536,7 +536,7 @@ Falhas também podem surgir em:
 - configurações inseguras;
 - criação própria de algoritmos.
 
-!!! danger "Não invente sua própria criptografia"
+"Não invente sua própria criptografia"
     Em projetos reais, utilize bibliotecas mantidas, padrões reconhecidos e configurações recomendadas.
 
 ---
@@ -644,43 +644,24 @@ Esse filtro não significa atividade maliciosa. Ele apenas localiza processos se
 
 ---
 
-## Laboratório rápido — Detectando alteração com hash
+## Laboratório prático — Detectando alterações com hash
 
-Crie um arquivo:
+Agora que entendemos como uma função hash ajuda a verificar a integridade de um arquivo, chegou o momento de observar isso na prática.
 
-```powershell
-"Entender antes de decorar." |
-Set-Content "C:\Users\Public\mensagem.txt"
-```
+Neste laboratório, criaremos um arquivo no Windows, calcularemos seu hash SHA-256 e modificaremos apenas um caractere.
 
-Calcule o hash:
+Depois, compararemos os resultados para verificar como uma pequena alteração produz um hash completamente diferente.
 
-```powershell
-Get-FileHash `
-    "C:\Users\Public\mensagem.txt" `
-    -Algorithm SHA256
-```
+Você aprenderá a:
 
-Anote o resultado.
+- calcular o hash SHA-256 de um arquivo;
+- comparar dois resultados;
+- detectar uma alteração no conteúdo;
+- compreender o efeito avalanche;
+- registrar a atividade no laboratório;
+- analisar as evidências disponíveis no Windows e no Elastic.
 
-Agora altere apenas um caractere:
-
-```powershell
-"Entender antes de decoraR." |
-Set-Content "C:\Users\Public\mensagem.txt"
-```
-
-Calcule novamente:
-
-```powershell
-Get-FileHash `
-    "C:\Users\Public\mensagem.txt" `
-    -Algorithm SHA256
-```
-
-Compare os valores.
-
-Mesmo com uma mudança pequena, o resultado será muito diferente.
+[Iniciar o laboratório →](../laboratorios/lab-002-integridade-de-arquivos-com-hash.md){ .md-button .md-button--primary }
 
 ---
 
@@ -735,19 +716,19 @@ Analise o cenário:
 4. o certificado pertence a uma empresa desconhecida;
 5. o e-mail pede execução imediata.
 
-??? question "1. A assinatura válida é suficiente para confiar no arquivo?"
+Questão "1. A assinatura válida é suficiente para confiar no arquivo?"
     Não. É necessário verificar quem assinou, a cadeia de confiança, a validade e o contexto.
 
-??? question "2. O que o hash diferente indica?"
+Questão "2. O que o hash diferente indica?"
     Indica que o conteúdo não é idêntico ao arquivo correspondente ao hash publicado.
 
-??? question "3. O hash diferente prova que existe malware?"
+Questão "3. O hash diferente prova que existe malware?"
     Não. Pode haver versão diferente, corrupção ou substituição. O evento exige investigação.
 
-??? question "4. A assinatura protege a confidencialidade?"
+Questão "4. A assinatura protege a confidencialidade?"
     Não. Ela apoia integridade e autenticidade, mas não esconde o conteúdo.
 
-??? question "5. Qual é a decisão mais segura?"
+Questão "5. Qual é a decisão mais segura?"
     Não executar o arquivo até validar origem, versão, hash, certificado e contexto.
 
 ---

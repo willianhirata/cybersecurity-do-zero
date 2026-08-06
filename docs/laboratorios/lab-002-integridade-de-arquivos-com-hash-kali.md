@@ -29,19 +29,19 @@ Se ainda não estudou o conceito de hash, recomendo ler primeiro o capítulo:
 mkdir -p ~/laboratorio-hash
 cd ~/laboratorio-hash
 
-printf 'Entender antes de decorar.\n' > mensagem-original.txt
+printf 'Entender antes de decorar.\n' > mensagem.txt
 ```
 
 ### 📷 Evidência 1
 
-![Criando o arquivo](assets/lab-002/01.png)
+![Criando o arquivo](assets/lab-002/captura1.JPG)
 
 ---
 
 # Etapa 2 — Calculando o hash
 
 ```bash
-sha256sum mensagem-original.txt
+sha256sum mensagem.txt
 ```
 
 Anote o valor retornado.

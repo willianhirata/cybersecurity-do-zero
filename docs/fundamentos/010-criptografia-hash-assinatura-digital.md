@@ -603,47 +603,6 @@ Mesmo assim, o SOC pode observar:
 
 ---
 
-## Aplicação em nosso laboratório Windows e Elastic
-
-No Windows, calcule o SHA-256 de um arquivo:
-
-```powershell
-Get-FileHash `
-    -Path "C:\Windows\System32\notepad.exe" `
-    -Algorithm SHA256
-```
-
-Consulte a assinatura Authenticode:
-
-```powershell
-Get-AuthenticodeSignature `
-    -FilePath "C:\Windows\System32\notepad.exe" |
-Format-List
-```
-
-Dependendo da versão e da telemetria coletada, o Elastic pode apresentar campos como:
-
-```text
-file.hash.sha256
-process.hash.sha256
-process.code_signature.subject_name
-process.code_signature.trusted
-process.code_signature.exists
-```
-
-Antes de criar consultas, confirme quais campos existem em seus eventos.
-
-Exemplo conceitual:
-
-```kql
-process.code_signature.exists: false
-and process.executable: "C:\\Users\\Public\\*"
-```
-
-Esse filtro não significa atividade maliciosa. Ele apenas localiza processos sem assinatura em um caminho que merece análise.
-
----
-
 ## Laboratório prático — Detectando alterações com hash
 
 Agora que entendemos como uma função hash ajuda a verificar a integridade de um arquivo, chegou o momento de observar isso na prática.

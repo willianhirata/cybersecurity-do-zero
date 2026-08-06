@@ -116,3 +116,4 @@ nav:
   - Laboratórios:
       - Visão Geral: laboratorios/index.md
       - Soc-001: laboratorios/caso-soc-001-investigacao-powershell.md
+      - Lab-002: lab-002-integridade-de-arquivos-com-hash-kali.md

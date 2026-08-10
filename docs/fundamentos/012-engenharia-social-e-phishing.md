@@ -188,7 +188,7 @@ flowchart LR
     F --> G
 ```
 
-!!! info "Phishing não precisa entregar malware"
+ "Phishing não precisa entregar malware"
     Uma página falsa criada apenas para capturar credenciais já pode cumprir o objetivo do atacante sem instalar qualquer código malicioso no dispositivo.
 
 ---
@@ -228,7 +228,7 @@ Spear phishing:
 
 É aqui que **OSINT** pode ser utilizado ofensivamente para construir uma história mais personalizada.
 
-!!! warning "MFA melhora a segurança, mas não elimina engenharia social"
+ "MFA melhora a segurança, mas não elimina engenharia social"
     Uma vítima ainda pode ser induzida a fornecer códigos, aprovar solicitações ou participar de um fluxo fraudulento.
 
 ---
@@ -352,7 +352,7 @@ Informações úteis incluem:
 | **DKIM** | A assinatura da mensagem é válida? |
 | **DMARC** | O domínio está alinhado com os resultados e a política definida? |
 
-!!! warning "PASS não significa automaticamente e-mail seguro"
+ "PASS não significa automaticamente e-mail seguro"
     Uma conta legítima pode estar comprometida, e um domínio controlado pelo atacante também pode possuir autenticação corretamente configurada.
 
 Autenticação de e-mail é **evidência**, não a conclusão inteira.

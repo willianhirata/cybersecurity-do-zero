@@ -95,6 +95,7 @@ nav:
       - Autenticação, Autorização e Accounting AAA: fundamentos/009-aaa.md
       - Criptografia, Hash e Assinatura Digital: fundamentos/010-criptografia-hash-assinatura-digital.md
       - Malware e seus principais tipos: fundamentos/011-malware-e-seus-principais-tipos.md
+      - Engenharia Social e Phishing: fundamentos/012-engenharia-social-e-phishing.md
 
   - Redes:
       - Visão Geral: redes/index.md

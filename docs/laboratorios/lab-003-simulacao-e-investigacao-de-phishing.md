@@ -112,7 +112,7 @@ documento.txt
 
 ### Evidência 3 — Download no navegador
 
-![Download do documento no navegador](assets/doc3.JPG)
+![Download do documento no navegador](assets/lab-003-phishing/doc3.JPG)
 
 # Parte 2 — Análise no Elastic
 

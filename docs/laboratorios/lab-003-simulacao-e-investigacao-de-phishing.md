@@ -78,7 +78,7 @@ Neste ponto, já existem indicadores suficientes para classificar a mensagem com
 
 ![Análise inicial do e-mail e seus principais indicadores](assets/lab-003-phishing/doc7.JPG)
 
-## 2. Acessar a página falsa
+## 3. Acessar a página falsa
 
 Aqui simulamos a vítima clicando no  botão e o navegador acessando:
 
@@ -96,7 +96,7 @@ Visualizar documento
 
 ![Página falsa com botão Visualizar documento](assets/lab-003-phishing/doc2.JPG)
 
-## 3. Realizar o download
+## 4. Realizar o download
 
 Agora, nesse momento a vítima clica em:
 
@@ -120,7 +120,7 @@ Agora assumimos o papel do analista SOC.
 
 O objetivo é verificar se a telemetria confirma que o usuário acessou a infraestrutura do phishing e realizou o download do arquivo.
 
-## 4. Procurar a conexão de rede
+## 5. Procurar a conexão de rede
 
 No Elastic utilizei a ajuda de alguns filtros para facilitar a busca:
 
@@ -147,7 +147,7 @@ host.name
 
 ![Evento de rede do Chrome para 10.0.2.2 na porta 8080](assets/lab-003-phishing/doc4.JPG)
 
-## 5. Procurar a criação do arquivo
+## 6. Procurar a criação do arquivo
 
 Agora nesse momento, filtramos para ver se houve criação de arquivo:
 
@@ -169,7 +169,7 @@ Esse evento ajuda a comprovar que o arquivo foi criado no endpoint durante a ati
 
 ![Evento 11 mostrando a criação do arquivo baixado](assets/lab-003-phishing/doc5.JPG)
 
-## 6. Montar a timeline
+## 7. Montar a timeline
 
 E agora vem o momento crucial, onde detalhamos a timeline completa que ficou assim:
 

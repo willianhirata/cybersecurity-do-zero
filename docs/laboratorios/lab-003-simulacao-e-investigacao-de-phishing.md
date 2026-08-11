@@ -54,10 +54,12 @@ Antes de iniciar vamos fazer uma triagem básica da mensagem analisando o arquiv
 E aqui encontramos informações como: 
 
 ```text
-Display Name: RH Corporativo
-From: rh@empresa-rh.example
-Reply-To: suporte@empresa-auth.example
+From: RH Corporativo <rh@hirata-rh.example>
+Reply-To: suporte@cybersecuritydozero-auth.example
+To: usuario@empresa.example
 Subject: Documento pendente para assinatura
+Message-ID: <LAB003@hirata-rh.example>
+Date: Mon, 10 Aug 2026 20:00:00 -0300
 
 SPF: fail
 DKIM: none

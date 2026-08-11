@@ -33,33 +33,52 @@ Sysmon
 Elastic
 ```
 
-Nenhum malware real será utilizado.
+Caalma que nenhum malware real será utilizado.
 
 # Parte 1 — Simulação do phishing
 
 ## 1. Abrir o e-mail simulado
 
-Na VM Windows, abra o HTML utilizado para representar o e-mail:
-
-```powershell
-Start-Process "C:\SOC-Lab\Phishing-003\email-simulado.html"
-```
+Primeiro de tudo, em nossa VM Windows, executei um HTML utilizado para representar o e-mail.
 
 A mensagem contém um falso aviso do RH solicitando acesso urgente a um documento.
 
-Clique em:
-
-```text
-Acessar documento
-```
-
 ### Evidência 1 — E-mail de phishing
 
-![E-mail de phishing com botão Acessar documento](assets/lab-003-phishing/01-email-phishing.png)
+![E-mail de phishing com botão Acessar documento](assets/lab-003-phishing/doc1.JPG)
+
+## 2. Análise inicial do email
+
+Antes de iniciar vamos fazer uma triagem básica da mensagem analisando o arquivo com os cabeçalhos simulados.
+
+E aqui encontramos informações como: 
+
+```text
+Display Name: RH Corporativo
+From: rh@empresa-rh.example
+Reply-To: suporte@empresa-auth.example
+Subject: Documento pendente para assinatura
+
+SPF: fail
+DKIM: none
+DMARC: fail
+```
+
+Ao analisar o conteúdo da mensagem, encontramos algo como:
+
+- uso de urgência;
+- solicitação inesperada;
+- domínio diferente do ambiente esperado;
+- diferença entre `From` e `Reply-To`;
+- link apontando para `http://10.0.2.2:8080/index.html`.
+
+Neste ponto, já existem indicadores suficientes para classificar a mensagem como suspeita e continuar a investigação sem confiar apenas na aparência do e-mail.
+
+![Análise inicial do e-mail e seus principais indicadores](assets/lab-003-phishing/doc7.JPG)
 
 ## 2. Acessar a página falsa
 
-Após clicar no link, o navegador acessará:
+Aqui simulamos a vítima clicando no  botão e o navegador acessando:
 
 ```text
 http://10.0.2.2:8080/index.html
@@ -73,17 +92,17 @@ Visualizar documento
 
 ### Evidência 2 — Página falsa
 
-![Página falsa com botão Visualizar documento](assets/lab-003-phishing/02-pagina-visualizar-documento.png)
+![Página falsa com botão Visualizar documento](assets/lab-003-phishing/doc2.JPG)
 
 ## 3. Realizar o download
 
-Clique em:
+Agora, nesse momento a vítima clica em:
 
 ```text
 Visualizar documento
 ```
 
-O navegador fará o download do arquivo inofensivo:
+E o navegador faz o download de um arquivo que parece inofensivo:
 
 ```text
 documento.txt
@@ -91,7 +110,7 @@ documento.txt
 
 ### Evidência 3 — Download no navegador
 
-![Download do documento no navegador](assets/lab-003-phishing/03-download-navegador.png)
+![Download do documento no navegador](assets/doc3.JPG)
 
 # Parte 2 — Análise no Elastic
 
@@ -101,7 +120,7 @@ O objetivo é verificar se a telemetria confirma que o usuário acessou a infrae
 
 ## 4. Procurar a conexão de rede
 
-No Elastic Discover, filtre:
+No Elastic utilizei a ajuda de alguns filtros para facilitar a busca:
 
 ```kql
 host.name: "labsoc1"
@@ -124,11 +143,11 @@ host.name
 
 ### Evidência 4 — Conexão com a infraestrutura do phishing
 
-![Evento de rede do Chrome para 10.0.2.2 na porta 8080](assets/lab-003-phishing/04-conexao-rede-evento-3.png)
+![Evento de rede do Chrome para 10.0.2.2 na porta 8080](assets/lab-003-phishing/doc4.JPG)
 
 ## 5. Procurar a criação do arquivo
 
-Agora filtre eventos de criação de arquivo:
+Agora nesse momento, filtramos para ver se houve criação de arquivo:
 
 ```kql
 host.name: "labsoc1"
@@ -146,37 +165,11 @@ Esse evento ajuda a comprovar que o arquivo foi criado no endpoint durante a ati
 
 ### Evidência 5 — Evento de criação do arquivo
 
-![Evento 11 mostrando a criação do arquivo baixado](assets/lab-003-phishing/05-download-evento-11.png)
+![Evento 11 mostrando a criação do arquivo baixado](assets/lab-003-phishing/doc5.JPG)
 
 ## 6. Montar a timeline
 
-Para deixar apenas os eventos importantes:
-
-```kql
-host.name: "labsoc1"
-and (
-    (
-        event.code: "1"
-        and process.name: "chrome.exe"
-    )
-    or
-    (
-        event.code: "3"
-        and process.name: "chrome.exe"
-        and destination.ip: "10.0.2.2"
-        and destination.port: 8080
-    )
-    or
-    (
-        event.code: "11"
-        and process.name: "chrome.exe"
-    )
-)
-```
-
-Ordene por `@timestamp`.
-
-A sequência esperada é:
+E agora vem o momento crucial, onde detalhamos a timeline completa que ficou assim:
 
 ```text
 chrome.exe iniciado
@@ -190,7 +183,7 @@ arquivo criado
 
 ### Evidência 6 — Timeline completa
 
-![Timeline dos eventos do phishing no Elastic](assets/lab-003-phishing/06-timeline-completa.png)
+![Timeline dos eventos do phishing no Elastic](assets/lab-003-phishing/doc6.JPG)
 
 # Conclusão
 

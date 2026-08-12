@@ -103,9 +103,10 @@ Construir uma documentação gratuita, organizada e acessível que ajude estudan
 
 #  Comece por aqui
 
-##  Fundamentos
+## Fundamentos
 
-| Capítulo                                                                        |       Status       |
+| Capítulo                                                                                                                     | Status             |
+| ---------------------------------------------------------------------------------------------------------------------------- | ------------------ |
 | ✅ [001 — O que é Cybersecurity?](https://github.com/willianhirata/cybersecurity-do-zero/blob/main/docs/fundamentos/001-o-que-e-cybersecurity.md) | Publicado |
 | ✅ [002 — A Tríade CIA](https://github.com/willianhirata/cybersecurity-do-zero/blob/main/docs/fundamentos/002-triade-cia.md) | Publicado |
 | ✅ [003 — Princípio do Menor Privilégio](https://github.com/willianhirata/cybersecurity-do-zero/blob/main/docs/fundamentos/003-principio-do-menor-privilegio.md) | Publicado |

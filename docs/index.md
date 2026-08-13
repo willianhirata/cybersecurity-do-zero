@@ -39,6 +39,18 @@ Aqui você encontrará:
 
 ---
 
+## Sobre mim[¶](#sobre-mim "Permanent link")
+
+Sou o Willian Hirata. Estou em transição de carreira para Cybersecurity, com foco inicial em Blue Team e, no futuro, em Threat Intelligence.
+
+Para colocar a teoria em prática, mantenho um home lab próprio com o Elastic Stack, com uma VM Windows 10 configurada para enviar logs e treinar análise de eventos.
+
+Este projeto documenta essa jornada: registro tudo que aprendo, tanto para organizar meus próprios estudos quanto para ajudar quem está começando do zero, assim como eu.
+
+[Meu LinkedIn](https://www.linkedin.com/in/willianhirata){ .md-button }
+
+---
+
 ## Comece por aqui
 
 <div class="grid cards" markdown>

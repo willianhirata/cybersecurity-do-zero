@@ -51,6 +51,39 @@ Este projeto documenta essa jornada: registro tudo que aprendo, tanto para organ
 
 ---
 
+## Laboratórios em destaque[¶](#laboratorios-em-destaque "Permanent link")
+
+Prática aplicada dos conceitos estudados, com cenários reais de investigação.
+
+<div class="grid cards" markdown>
+
+-   **Soc-001 — Investigação PowerShell**
+
+    ---
+    Análise de execução suspeita de PowerShell em ambiente simulado de SOC.
+
+    [Ver investigação](https://willianhirata.github.io/cybersecurity-do-zero/laboratorios/caso-soc-001-investigacao-powershell/)
+
+-   **Lab-002 — Integridade de Arquivos com Hash**
+
+    ---
+    Verificação de integridade de arquivos usando hashing em ambiente Kali Linux.
+
+    [Ver investigação](https://willianhirata.github.io/cybersecurity-do-zero/laboratorios/lab-002-integridade-de-arquivos-com-hash-kali/)
+
+-   **Lab-003 — Simulação de Phishing**
+
+    ---
+    Simulação e investigação de um ataque de phishing, do vetor inicial à análise de indicadores.
+
+    [Ver investigação](https://willianhirata.github.io/cybersecurity-do-zero/laboratorios/lab-003-simulacao-e-investigacao-de-phishing/)
+
+</div>
+
+[Ver todos os laboratórios](https://willianhirata.github.io/cybersecurity-do-zero/laboratorios/){ .md-button }
+
+---
+
 ## Comece por aqui
 
 <div class="grid cards" markdown>

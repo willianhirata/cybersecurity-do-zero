@@ -127,6 +127,7 @@ Construir uma documentação gratuita, organizada e acessível que ajude estudan
 | ✅ [Soc-001 — Investigação PowerShell](https://github.com/willianhirata/cybersecurity-do-zero/blob/main/docs/laboratorios/caso-soc-001-investigacao-powershell.md) | Publicado |
 | ✅ [Lab-002 — Integridade de Arquivos com Hash (Kali)](https://github.com/willianhirata/cybersecurity-do-zero/blob/main/docs/laboratorios/lab-002-integridade-de-arquivos-com-hash-kali.md) | Publicado |
 | ✅ [Lab-003 — Simulação e Investigação de Phishing](https://github.com/willianhirata/cybersecurity-do-zero/blob/main/docs/laboratorios/lab-003-simulacao-e-investigacao-de-phishing.md) | Publicado |
+| ✅ [Lab-004 — Configuração básica de firewall com pfsense](https://github.com/willianhirata/cybersecurity-do-zero/blob/main/docs/laboratorios/lab-004-configuracao-basica-de-firewall-com-pfsense.md) | Publicado |
 
 ---
 

@@ -97,7 +97,7 @@ Construir uma documentação gratuita, organizada e acessível que ajude estudan
 | ⚪ Blue Team           |   ⏳ Planejado   | **0 / 20** |
 | ⚪ OSINT               |   ⏳ Planejado   | **0 / 10** |
 | ⚪ Threat Intelligence |   ⏳ Planejado   | **0 / 12** |
-| 🟢 Laboratórios        | 🚧 Em andamento | **3 labs publicados** |
+| 🟢 Laboratórios        | 🚧 Em andamento | **4 labs publicados** |
 
 ---
 

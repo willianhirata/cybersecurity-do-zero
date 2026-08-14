@@ -6,59 +6,54 @@ Instalar, configurar e operar um firewall pfSense em ambiente virtualizado, apli
 
 ## Ambiente e ferramentas
 
-- **Hipervisor:** VMware Workstation/Player
+- **VirtualBox:** Oracle Virtual Box
 - **Firewall:** pfSense CE (Community Edition)
 - **Rede WAN:** NAT (acesso à internet)
-- **Rede LAN:** Host-only (rede isolada, "protegida" pelo firewall)
+- **Rede LAN:** Rede Interna (rede interna)
 - **Cliente de teste:** VM auxiliar conectada à rede LAN
 
 ## Habilidades demonstradas
 
-`Virtualização de rede` `Instalação de firewall` `Configuração de interfaces WAN/LAN` `Criação de regras de firewall` `Análise de logs` `DHCP`
+`Virtualização de rede` `Instalação de firewall` `Configuração de interfaces WAN/LAN` `Criação de regras de firewall` `Análise de logs` 
 
 ## Etapas executadas
 
 ### 1. Preparação do ambiente
 
-Criação da VM no VMware com duas interfaces de rede — uma para WAN (NAT) e outra para LAN (Host-only) — simulando a topologia de um firewall separando a rede interna da internet.
+Criação da VM no VirtualBox com duas interfaces de rede — uma para WAN (NAT) e outra para LAN (Internal Network) — simulando a topologia de um firewall separando a rede interna da internet.
 
-[Screenshot: configuração de rede da VM]
+![Topologia de um firewall](assets/lab-004/img1.JPG) ![Topologia de um firewall](assets/lab-004/img2.JPG)
 
 ### 2. Instalação do pfSense
 
 Instalação do sistema a partir da ISO oficial, com particionamento automático (ZFS).
 
-[Screenshot: tela de instalação concluída]
+![Instalação do sistema](assets/lab-004/img3.JPG)
 
 ### 3. Atribuição de interfaces
 
 No console, associação das interfaces de rede detectadas às funções WAN e LAN.
 
-[Screenshot: atribuição de interfaces no console]
+![Instalação do sistema](assets/lab-004/img5.JPG)
 
 ### 4. Acesso à interface web e wizard inicial
 
 Acesso via navegador a partir da VM cliente, autenticação com credenciais padrão e conclusão do assistente de configuração inicial, incluindo a troca da senha padrão de administrador.
 
-[Screenshot: tela final do setup wizard]
+![Instalação do sistema](assets/lab-004/img6.JPG) ![Instalação do sistema](assets/lab-004/img7.JPG)
 
 ### 5. Criação de regra de firewall
 
 Criação de uma regra de bloqueio na interface LAN, restringindo o acesso a um destino específico a partir da rede interna.
 
-[Screenshot: regra de bloqueio configurada]
+![Instalação do sistema](assets/lab-004/img8.JPG)
 
 ### 6. Validação do bloqueio
 
 Teste de acesso ao destino bloqueado a partir da VM cliente (falha esperada) e confirmação da ação via logs do sistema.
 
-[Screenshot: log de firewall registrando o bloqueio]
+![Instalação do sistema](assets/lab-004/img9.JPG) ![Instalação do sistema](assets/lab-004/img10.JPG)
 
-### 7. Configuração de DHCP (extra)
-
-Ativação do servidor DHCP na interface LAN e verificação do lease entregue à VM cliente.
-
-[Screenshot: lease DHCP ativo]
 
 ## Resultados
 

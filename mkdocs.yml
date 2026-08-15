@@ -99,6 +99,7 @@ nav:
 
   - Redes:
       - Visão Geral: redes/index.md
+      - Introdução às Redes e por que importam para Segurança: redes/001-introducao-as-redes-e-por-que-importam-para-seguranca.md
 
   - Linux:
       - Visão Geral: linux/index.md

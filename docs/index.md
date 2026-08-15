@@ -80,10 +80,11 @@ Prática aplicada dos conceitos estudados, com cenários reais de investigação
 
     [Ver investigação](https://willianhirata.github.io/cybersecurity-do-zero/laboratorios/lab-003-simulacao-e-investigacao-de-phishing/)
 
-    **Lab-004 — Configuração Básica de Firewall com pfsense**
+-   **Lab-004 — Configuração Básica de Firewall com pfsense**
 
     ---
     Instalar, configurar e operar um firewall pfSense em ambiente virtualizado, aplicando uma regra de bloqueio de tráfego e validando seu funcionamento através dos logs do sistema.
+    
     [Ver investigação](https://willianhirata.github.io/cybersecurity-do-zero/laboratorios/lab-004-configuracao-basica-de-firewall-com-pfsense/)
 
 </div>

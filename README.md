@@ -91,13 +91,13 @@ Construir uma documentação gratuita, organizada e acessível que ajude estudan
 | Módulo                |     Situação    |  Progresso |
 | :-------------------- | :-------------: | :--------: |
 | 🟢 Fundamentos         |     Concluído    | **12 / 12** |
-| ⚪ Redes               |   ⏳ Planejado   | **0 / 12** |
+| 🟢 Redes               |  🚧 Em andamento | **1 / 12** |
 | ⚪ Linux               |   ⏳ Planejado   | **0 / 18** |
 | ⚪ Windows             |   ⏳ Planejado   | **0 / 15** |
 | ⚪ Blue Team           |   ⏳ Planejado   | **0 / 20** |
 | ⚪ OSINT               |   ⏳ Planejado   | **0 / 10** |
 | ⚪ Threat Intelligence |   ⏳ Planejado   | **0 / 12** |
-| 🟢 Laboratórios        | 🚧 Em andamento | **4 labs publicados** |
+| 🟢 Laboratórios        |  🚧 Em andamento | **4 labs publicados** |
 
 ---
 

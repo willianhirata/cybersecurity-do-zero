@@ -102,6 +102,9 @@ nav:
       - Introdução às Redes e por que importam para Segurança: redes/001-introducao-as-redes-e-por-que-importam-para-seguranca.md
       - Modelo OSI: redes/002-modelo-osi.md
       - Modelo TCP/IP: redes/003-modelo-tcp-ip.md
+      - Endereçamento IP e Mascaras de Sub Rede: redes/004-enderecamento-ip-e-mascaras-de-sub-rede.md
+
+
 
   - Linux:
       - Visão Geral: linux/index.md

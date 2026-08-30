@@ -105,6 +105,7 @@ nav:
       - Endereçamento IP e Mascaras de Sub Rede: redes/004-enderecamento-ip-e-mascaras-de-sub-rede.md
       - Portas e Protocolos Essenciais: redes/005-portas-e-protocolos-essenciais.md
       - DNS Funcionamento e Riscos de Seguranca: redes/006-dns-funcionamento-e-riscos-de-seguranca.md
+      - HTTP, HTTPS e Certificados TLS/SSL: redes/007-http-https-e-certificados-tls-ssl.md
 
 
 

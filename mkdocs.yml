@@ -108,14 +108,7 @@ nav:
       - HTTP, HTTPS e Certificados TLS/SSL: redes/007-http-https-e-certificados-tls-ssl.md
       - Switches, VLANS e Segmentação de Rede: redes/008-switches-vlans-e-segmentacao-de-rede.md
       - Roteamento e Firewalls: redes/009-roteamento-e-firewalls.md
-
-
-
-
-
-
-
-
+      - VPNs e Criptografia em Transito: redes/010-vpns-e-criptografia-em-transito.md
 
   - Linux:
       - Visão Geral: linux/index.md

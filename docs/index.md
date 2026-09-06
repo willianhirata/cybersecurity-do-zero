@@ -43,7 +43,7 @@ Aqui você encontrará:
 
 <img src="assets/img/WhatsApp Image 2026-08-15 at 2.26.18 PM.jpeg" alt="Willian Hirata" width="160" style="border-radius: 50%; float: right; margin-left: 16px; margin-bottom: 16px;">
 
-Sou o Willian Hirata. Estou em transição de carreira para Cybersecurity, com foco inicial em Blue Team e, no futuro, em Threat Intelligence.
+Sou o Willian Hirata. Estudante de Cybersecurity, com foco inicial em Blue Team e, no futuro, em Threat Intelligence.
 
 Para colocar a teoria em prática, mantenho um home lab próprio com o Elastic Stack, com uma VM Windows 10 configurada para enviar logs e treinar análise de eventos.
 

@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="../assets/logo.png" alt="Cybersecurity do Zero" width="120">
-</p>
+<p align="center"> <img src="https://willianhirata.github.io/cybersecurity-do-zero/assets/logo.png" alt="Cybersecurity do Zero" width="120"> </p>
 
 # MikroTrick — Bypass de Autenticação SSH em Massa no MikroTik RouterOS
 

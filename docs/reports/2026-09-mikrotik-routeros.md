@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="../assets/logo.png" alt="Cybersecurity do Zero" width="120">
+</p>
+
 # MikroTrick — Bypass de Autenticação SSH em Massa no MikroTik RouterOS
 
 **Data da divulgação:** 05 de setembro de 2026

@@ -6,6 +6,7 @@
 **Descoberto e coordenado por:** CERT Polska
 **Severidade:** Crítica (CVSS até 9.2)
 **Status:** Exploração ativa confirmada desde 02/09/2026
+**Report por:** Willian Hirata
 
 ---
 

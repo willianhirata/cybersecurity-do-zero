@@ -109,6 +109,7 @@ nav:
       - Switches, VLANS e Segmentação de Rede: redes/008-switches-vlans-e-segmentacao-de-rede.md
       - Roteamento e Firewalls: redes/009-roteamento-e-firewalls.md
       - VPNs e Criptografia em Transito: redes/010-vpns-e-criptografia-em-transito.md
+      - Analise de Tráfego com Wireshark e TCPDUMP: redes/011-analise-de-trafego-com-wireshark-e-tcpdump.md
 
   - Linux:
       - Visão Geral: linux/index.md

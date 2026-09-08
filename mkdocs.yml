@@ -110,6 +110,8 @@ nav:
       - Roteamento e Firewalls: redes/009-roteamento-e-firewalls.md
       - VPNs e Criptografia em Transito: redes/010-vpns-e-criptografia-em-transito.md
       - Analise de Tráfego com Wireshark e TCPDUMP: redes/011-analise-de-trafego-com-wireshark-e-tcpdump.md
+      - Ataques comuns em redes: redes/012-ataques-comuns-em-redes.md
+
 
   - Linux:
       - Visão Geral: linux/index.md

@@ -31,7 +31,7 @@ Ao final deste capítulo, você será capaz de:
 
 ---
 
-## Como sempre, vamos começar utilizando nossa imaginação.
+## Vamos começar utilizando nossa imaginação.
 
 Você recebe uma missão: investigar um servidor comprometido.
 

@@ -115,6 +115,7 @@ nav:
 
   - Linux:
       - Visão Geral: linux/index.md
+      - Introdução ao Linux e Sua Importâcia para Segurança: linux/001-introducao-ao-linux-e-por-que-importa-para-seguranca.md
 
   - Windows:
       - Visão Geral: windows/index.md

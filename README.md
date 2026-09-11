@@ -91,8 +91,8 @@ Construir uma documentação gratuita, organizada e acessível que ajude estudan
 | Módulo                |     Situação    |  Progresso |
 | :-------------------- | :-------------: | :--------: |
 | 🟢 Fundamentos         |     Concluído    | **12 / 12** |
-| 🟢 Redes               |  🚧 Em andamento | **10 / 12** |
-| ⚪ Linux               |   ⏳ Planejado   | **0 / 18** |
+| 🟢 Redes               |     Concluído    | **12 / 12** |
+| ⚪ Linux               |   🚧 Em andamento  | **1 / 18** |
 | ⚪ Windows             |   ⏳ Planejado   | **0 / 15** |
 | ⚪ Blue Team           |   ⏳ Planejado   | **0 / 20** |
 | ⚪ OSINT               |   ⏳ Planejado   | **0 / 10** |

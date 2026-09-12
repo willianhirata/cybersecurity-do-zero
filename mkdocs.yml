@@ -138,6 +138,8 @@ nav:
 
   - Reports:
       - 2026-09-Mikrotik RouterOS: reports/2026-09-mikrotik-routeros.md
+      - 2026-09-GitLab CVE-2026-85706: reports/2026-09-gitlab-cve-2026-85706.md
+
 
 
 

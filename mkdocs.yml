@@ -118,6 +118,7 @@ nav:
       - Introdução ao Linux e Sua Importâcia para Segurança: linux/001-introducao-ao-linux-e-por-que-importa-para-seguranca.md
       - Terminal e a Hierarquia de  Diretórios: linux/002-o-terminal-e-a-hierarquia-de-diretorios.md
       - Comandos Essenciais de Navegação e Leitura de Arquivos: linux/003-comandos-essenciais-de-navegacao-e-leitura-de-arquivos.md
+      - Permissões de Arquivos no Linux: linux/004-permissoes-de-arquivos-no-linux.md
 
 
 

@@ -1,8 +1,3 @@
----
-title: Capítulo 005 — Processos: o que está rodando no sistema
-description: Aprenda a listar processos com ps e top/htop, interpretar PID e PPID, reconhecer relações pai-filho suspeitas, e encerrar processos com kill de forma segura durante uma investigação.
----
-
 # Capítulo 005 — Processos: o que está rodando no sistema
 
 > **Entender antes de decorar.**

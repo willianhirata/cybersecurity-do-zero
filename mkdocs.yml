@@ -121,6 +121,8 @@ nav:
       - Permissões de Arquivos no Linux: linux/004-permissoes-de-arquivos-no-linux.md
       - Processos o que Está Rodando no Sistema: linux/005-processos-o-que-esta-rodando-no-sistema.md
       - Serviços e o Systemd: linux/006-servicos-e-o-systemd.md
+      - Usuários e Grupos: linux/007-usuarios-e-grupos.md
+
 
 
 
